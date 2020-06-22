@@ -1,0 +1,41 @@
+.pre-nav {
+  background: $dark-gray;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
+}
+
+.pre-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55vw;
+}
+
+.pre-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+
+.pre-nav-links a:hover {
+  opacity: 0.75;
+}
+
+.pre-nav-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pre-nav-links{
+    width: 100vw;
+  }
+}
