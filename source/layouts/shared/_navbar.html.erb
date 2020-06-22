@@ -1,0 +1,23 @@
+<nav id="navbar">
+  <div class="nav-wrapper">
+    <div class="navbar-logo-container">
+      <% link_to "#home-section", 'aria-label': "Back to Home" do %>
+        <%= image_tag "", alt: "C.L.A.S.S.E. Conseil - Logo", id:"nav-logo-left" %>
+      <% end %>
+    </div>
+    <!-- Navigation -->
+    <div class="navbar-middle hidden-sm-down">
+      <ul class="nav-list">
+        <li class="navbar-item"><%= link_to "Présentation", "", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Pratiques Profesionnelles", "", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Formations", "", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Contact", "", class:"navbar-link" %></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <%= link_to "Prendre un Rendez-vous", "contact.html", class:"btn-contact" %>
+    </div>
+    <!-- Burger menu for small screens -->
+  </div>
+</div>
+</nav>
