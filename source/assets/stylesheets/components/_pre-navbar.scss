@@ -1,4 +1,4 @@
-.pre-nav {
+.pre-navbar {
   background: $dark-gray;
   display: flex;
   flex-direction: row-reverse;
@@ -12,27 +12,30 @@
 .pre-nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 55vw;
+  justify-content: flex-end;
+  padding: 0px 20px;
+
+  .fa-phone,.fa-mobile,.fa-envelope{
+    padding-right: 10px;
+    font-size: 22px;
+  }
 }
 
-.pre-nav-links a {
+.fa-linkedin{
+  font-size: 32px;
+}
+
+.pre-nav-link {
   color: white;
   text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
+  font-size: 18px;
+  padding: 0px 25px;
 }
 
-.pre-nav-links a:hover {
+.pre-nav-link:hover {
   opacity: 0.75;
 }
 
-.pre-nav-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 300px;
-}
 
 @media screen and (max-width: 1024px) {
   .pre-nav-links{
