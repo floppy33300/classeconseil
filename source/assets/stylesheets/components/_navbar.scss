@@ -28,34 +28,34 @@
 }
 
 /* Navbar link */
-.navbar-item {
-  padding: 27px 25px;
-  list-style: none;
-  border-bottom: 3px solid transparent;
-  transition: all 0.3s ease;
-}
 
 .navbar-link {
   color: $dark-gray;
+  padding: 0 25px;
   font-size: 16px;
   letter-spacing: 1px;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
+  height: 77px;
+  line-height: 77px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.15s;
 }
 
 .navbar-link:hover {
   color: $dark-red;
-}
-
-.navbar-item:hover {
-  color: $dark-red;
   border-bottom: 3px solid $dark-red;
-
-  .navbar-link {
-    color: $dark-red;
-  }
 }
+
+// .navbar-item:hover {
+//   color: $dark-red;
+//   // border-bottom: 3px solid $dark-red;
+
+//   .navbar-link {
+//     color: $dark-red;
+//   }
+// }
 
 .btn-contact {
   background: $dark-red;
@@ -293,5 +293,11 @@
 
   .btn-contact {
     padding: 10px 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar-link {
+    font-size: 15px;
   }
 }
