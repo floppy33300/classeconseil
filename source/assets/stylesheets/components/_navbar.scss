@@ -2,6 +2,7 @@
   width: 100%;
   position: relative;
   box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.6);
+  z-index: 50;
 }
 
 .nav-wrapper {
@@ -42,7 +43,9 @@
 
 .navbar-link:hover {
   color: $dark-red;
-  background: linear-gradient(180deg, #ffffff 0, #dedede);
+  // background: linear-gradient(180deg, #ffffff 0, #dedede);
+  background: linear-gradient(180deg, #ffffff 0, rgba(128, 128, 128, 0.8));
+  // background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(127, 127, 127, 0.4) 50%, rgba(128, 128, 128, 0.8) 100%);
   height: 79px;
   line-height: 79px;
 }

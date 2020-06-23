@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <div class="navbar-logo-container">
       <% link_to "/index.html", 'aria-label': "Back to Home" do %>
-        <%= image_tag "https://res.cloudinary.com/dqszntd5j/image/upload/v1592917699/logo_temp.png", alt: "C.L.A.S.S.E. Conseil - Logo", id:"nav-logo-left" %>
+        <%= image_tag "https://res.cloudinary.com/dqszntd5j/image/upload/v1592933200/logo.png", alt: "C.L.A.S.S.E. Conseil - Logo", id:"nav-logo-left" %>
       <% end %>
     </div>
     <!-- Navigation -->
@@ -25,6 +25,9 @@
         </span>
       </button>
       <div class="sidenav">
+        <% link_to "/index.html", 'aria-label': "Back to Home" do %>
+          <%= image_tag "https://res.cloudinary.com/dqszntd5j/image/upload/v1592933200/logo.png", alt: "C.L.A.S.S.E. Conseil - Logo", id:"nav-logo-left" %>
+        <% end %>
         <ul>
           <li><%= link_to "Accueuil", "/index.html", class:"sidenav-link" %></li>
           <li><%= link_to "Présentation", "/presentation.html", class:"sidenav-link" %></li>

@@ -1,19 +1,55 @@
-#one {
-  height: 100vh;
-  background: green;
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
 }
 
-#two {
-  height: 100vh;
-  background: blue;
+.banner {
+  color: $white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+
+
+  h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
 }
 
-#three {
-  height: 100vh;
-  background: violet;
+
+.banner p {
+  font-size: 20px;
+  color: $white;
+  opacity: .7;
 }
 
-#four {
-  height: 100vh;
-  background: crimson;
+.btn-flat-outline {
+  color: $white;
+  padding: 10px 15px;
+  margin-bottom: 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid $dark-red;
+  background: $dark-red;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 1px 1px 6px 0px rgba(255, 255, 255, 0.75);
+  }
 }

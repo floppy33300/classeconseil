@@ -30,6 +30,16 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   height: 100%;
 }
 
+// App utils
+.mini-title {
+  font-style: italic;
+  font-size: 22px;
+  color: $dark-red;
+  text-align: center;
+  margin: 20px auto;
+
+}
+
 // Utilities classes (take on Bootstrap)
 .container {
   width: 100%;
