@@ -93,38 +93,44 @@
 
 
 
-.divider {
-  height: .5px;
-}
+// .divider {
+//   height: .5px;
+// }
 
-.divider.light {
-  background: #fff;
+// .divider.light {
+//   background: #fff;
 
-}
+// }
 
-.divider.light:before {
+// .divider.light:before {
+//   position: relative;
+//   float: left;
+//   background: linear-gradient(to right, rgba(107, 0, 30, 0), rgba(107, 0, 30, 1) 50%);
+//   margin-top: 2px;
+//   width: 50%;
+//   height: .5px;
+//   content: "";
+// }
+
+// .divider.light:after {
+//   position: relative;
+//   float: right;
+//   background: linear-gradient(to left, rgba(107, 0, 30, 0), rgba(107, 0, 30, 1) 50%);
+//   margin-top: 2px;
+//   width: 50%;
+//   height: .5px;
+//   content: "";
+// }
+
+// .width80 {
+//   width: 80%;
+//   margin: 0px auto;
+// }
+
+.gradient {
+  height: 5px;
   position: relative;
-  float: left;
-  background: linear-gradient(to right, rgba(107, 0, 30, 0), rgba(107, 0, 30, 1) 50%);
-  margin-top: 2px;
-  width: 50%;
-  height: .5px;
-  content: "";
-}
-
-.divider.light:after {
-  position: relative;
-  float: right;
-  background: linear-gradient(to left, rgba(107, 0, 30, 0), rgba(107, 0, 30, 1) 50%);
-  margin-top: 2px;
-  width: 50%;
-  height: .5px;
-  content: "";
-}
-
-
-/* Presentation only */
-.width80 {
   width: 80%;
-  margin: 0px auto;
+  background: radial-gradient(ellipse farthest-side at top center, #6b001e, transparent);
+  margin: auto;
 }
