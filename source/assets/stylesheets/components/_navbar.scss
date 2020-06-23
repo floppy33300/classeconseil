@@ -36,17 +36,24 @@
   letter-spacing: 1px;
   cursor: pointer;
   text-decoration: none;
-  height: 77px;
-  line-height: 77px;
-  border-bottom: 3px solid transparent;
+  height: 79px;
+  line-height: 79px;
 }
 
 .navbar-link:hover {
   color: $dark-red;
+  background: linear-gradient(180deg, #ffffff 0, #dedede);
+  height: 79px;
+  line-height: 79px;
 }
 
 .active {
   border-bottom: 3px solid $dark-red;
+
+  &:hover {
+    background: transparent;
+    ;
+  }
 }
 
 .btn-contact {
