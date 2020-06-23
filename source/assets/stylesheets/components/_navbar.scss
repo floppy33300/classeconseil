@@ -73,33 +73,33 @@
 }
 
 // Mobile NAV
-#logo-sideNav {
-  height: 90px;
-  margin: 10px auto;
-  transition: 0.2s;
-  opacity: 0;
-}
+// #logo-sideNav {
+//   height: 90px;
+//   margin: 10px auto;
+//   transition: 0.2s;
+//   opacity: 0;
+// }
 
 .sidenav {
   height: 0;
   width: 100%;
   position: fixed;
   opacity: 0;
-  // z-index: 1;
   top: 0;
   left: 0;
   margin: 0;
   background-color: $dark-red;
-  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
   transition: 0.6s ease;
 
   ul {
-    margin: 40px 0 0 10px;
+    margin: 40px auto;
+    padding: 0;
   }
 
   li {
-    margin-left: 10px;
+    margin: 0 auto;
     width: fit-content;
     padding: 20px 30px;
   }
@@ -108,11 +108,10 @@
 .show-sidenav {
   height: 100%;
   opacity: 1;
-  padding-top: 100px;
 
-  #logo-sideNav {
-    opacity: 1;
-  }
+  // #logo-sideNav {
+  //   opacity: 1;
+  // }
 }
 
 .front-position {
@@ -132,6 +131,7 @@
 
 .social-wrapper {
   text-align: center;
+  margin-top: 100px;
 }
 
 .social-links-sidenav {
@@ -143,11 +143,14 @@
 .social-links-sidenav a {
   color: $white;
   cursor: pointer;
-  font-size: 36px;
   padding: 0px 20px;
 
   &:hover {
     color: $white;
+  }
+
+  .fa-linkedin {
+    font-size: 42px;
   }
 }
 
@@ -161,6 +164,7 @@
   background-color: transparent;
   border: 0;
   margin: 0;
+
 
   .hamburger-inner,
   .hamburger-inner::before,
@@ -177,6 +181,13 @@
     border-radius: 4px;
   }
 }
+
+// .is-active {
+//   position: absolute;
+//   top: -20px;
+//   right: 20px;
+//   transition: all 1s;
+// }
 
 .hamburger-box {
   width: 40px;
@@ -243,3 +254,22 @@
 }
 
 // END mobile nav
+
+
+// media queries
+// tel
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .sidenav ul {
+    margin: 120px auto 0;
+  }
+
+  .social-wrapper {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .social-wrapper {
+    margin: 20px;
+  }
+}
