@@ -1,7 +1,7 @@
 <nav id="navbar">
   <div class="nav-wrapper">
     <div class="navbar-logo-container">
-      <% link_to "#home-section", 'aria-label': "Back to Home" do %>
+      <% link_to "/index.html", 'aria-label': "Back to Home" do %>
         <%= image_tag "", alt: "C.L.A.S.S.E. Conseil - Logo", id:"nav-logo-left" %>
       <% end %>
     </div>
@@ -14,10 +14,28 @@
         <li class="navbar-item"><%= link_to "Contact", "", class:"navbar-link" %></li>
       </ul>
     </div>
-    <div class="navbar-right">
+    <div class="navbar-right hidden-sm-down">
       <%= link_to "Prendre un Rendez-vous", "contact.html", class:"btn-contact" %>
     </div>
     <!-- Burger menu for small screens -->
+    <div class="mobile_nav d-md-none">
+      <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" id="sidenav-trigger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="sidenav">
+        <% link_to "/index.html" do %>
+          <%= image_tag "", alt: "C.L.A.S.S.E. Conseil - Logo", class:"img-responsive", id: "logo-sideNav" %>
+        <% end %>
+        <ul>
+          <li class="navbar-item"><%= link_to "Présentation", "", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Pratiques Profesionnelles", "", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Formations", "", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Contact", "", class:"navbar-link" %></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 </nav>
