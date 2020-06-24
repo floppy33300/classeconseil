@@ -45,6 +45,96 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   font-family: $headers-font;
 }
 
+.text-white {
+  color: $white;
+}
+
+// separator
+// .divider {
+//   height: .5px;
+// }
+
+// .divider.light {
+//   background: #fff;
+
+// }
+
+// .divider.light:before {
+//   position: relative;
+//   float: left;
+//   background: linear-gradient(to right, rgba(107, 0, 30, 0), rgba(107, 0, 30, 1) 50%);
+//   margin-top: 2px;
+//   width: 50%;
+//   height: .5px;
+//   content: "";
+// }
+
+// .divider.light:after {
+//   position: relative;
+//   float: right;
+//   background: linear-gradient(to left, rgba(107, 0, 30, 0), rgba(107, 0, 30, 1) 50%);
+//   margin-top: 2px;
+//   width: 50%;
+//   height: .5px;
+//   content: "";
+// }
+
+// .width80 {
+//   width: 80%;
+//   margin: 0px auto;
+// }
+
+.separator-gradient {
+  height: 5px;
+  position: relative;
+  width: 80%;
+  background: radial-gradient(ellipse farthest-side at top center, #6b001e, transparent);
+  margin: auto;
+}
+
+// scroll icon
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  bottom: 15px;
+  width: 34px;
+  height: 55px;
+  margin-left: -20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: scroll
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(38px);
+  }
+}
+
+
 // Utilities classes (take on Bootstrap)
 .container {
   width: 100%;
