@@ -16,10 +16,10 @@ title: C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)
   <div class="quote container">
     <div class="quote-wrapper">
       <div class="quote-text">
-      <blockquote>
-        <p>Développer les compétences, c'est créer de la valeur ajoutée, augmenter l'efficience, participer au
-          développement personnel et susciter la motivation sous jacente</p>
-      </blockquote>
+        <blockquote>
+          <p>Développer les compétences, c'est créer de la valeur ajoutée, augmenter l'efficience, participer au
+            développement personnel et susciter la motivation sous jacente</p>
+        </blockquote>
       </div>
     </div>
   </div>
@@ -37,42 +37,81 @@ title: C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)
     </div>
   </div>
 </section>
-<!-- <div class="width80">
-  <div class="divider light" />
-</div> -->
 <div class="separator-gradient"></div>
 <section class="services section container">
   <p class="mini-title" id="mini-title-service">Mes services</p>
   <h2 class="section-title">Ensemble,</h2>
-  <div class="services-steps-wrapper">
-    <div class="services-step analyse">
+  <div class="services-cards-wrapper">
+    <% link_to '/pratiques_professionnelles.html', class: "card-full-link"  do %>
+    <div class="services-card analyse">
       <div class="icons">
         <i class="fas fa-chart-line"></i>
       </div>
       <h3>Analysons vos besoins</h3>
-      <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos commodi consequatur perspiciatis</p>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos commodi
+        consequatur perspiciatis</p>
       <hr class="sep-card">
-      <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/formations.html", class: "card-links" %>
+      <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/pratiques_professionnelles.html", class: "card-links" %>
     </div>
-    <div class="services-step steps-definition">
+    <% end %>
+    <% link_to '/pratiques_professionnelles.html', class: "card-full-link"  do %>
+    <div class="services-card steps-definition">
       <div class="icons">
         <i class="fas fa-cogs"></i>
       </div>
       <h3>Définissons la démarche</h3>
-      <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi vero aliquid explicabo commodi cumque</p>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi vero aliquid explicabo
+        commodi cumque</p>
       <hr class="sep-card">
       <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/formations.html", class: "card-links" %>
     </div>
-    <div class="services-step tools">
+    <% end %>
+    <% link_to '/pratiques_professionnelles.html', class: "card-full-link"  do %>
+    <div class="services-card tools">
       <div class="icons">
         <i class="fas fa-wrench"></i>
       </div>
       <h3>Choisissons les outils</h3>
-      <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi vero aliquid explicabo commodi cumque</p>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi vero aliquid explicabo
+        commodi cumque</p>
       <hr class="sep-card">
       <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/formations.html", class: "card-links" %>
     </div>
-
-
+    <% end %>
+  </div>
+</section>
+<div class="separator-gradient"></div>
+<section class="reinsurance section container">
+  <p class="mini-title" id="mini-title-service">Travaillons ensemble</p>
+  <h2 class="section-title">Grandir et s'agrandir</h2>
+  <div class="reinsurance-wrapper">
+    <div class="reinsurance-items">
+      <div class="reinsurance-items-inner">
+        <i class="fas fa-briefcase"></i>
+        <p class="nbr">25</p>
+        <p class="reinsurance-text">Années d'expériences</p>
+      </div>
+    </div>
+    <div class="reinsurance-items">
+      <div class="reinsurance-items-inner">
+        <i class="fas fa-award"></i>
+        <p class="nbr">2</p>
+        <p class="reinsurance-text">Certifications</p>
+      </div>
+    </div>
+    <div class="reinsurance-items">
+      <div class="reinsurance-items-inner">
+        <i class="far fa-handshake"></i>
+        <p class="nbr">50+</p>
+        <p class="reinsurance-text">Clients</p>
+      </div>
+    </div>
+    <div class="reinsurance-items">
+      <div class="reinsurance-items-inner">
+        <i class="far fa-smile"></i>
+        <p class="nbr">100%</p>
+        <p class="reinsurance-text">Satisfaction</p>
+      </div>
+    </div>
   </div>
 </section>
