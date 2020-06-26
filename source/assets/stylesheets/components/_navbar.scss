@@ -37,27 +37,22 @@
   letter-spacing: 1px;
   cursor: pointer;
   text-decoration: none;
-  height: 79px;
-  line-height: 79px;
-  border-bottom: 3px solid transparent;
+  height: 78px;
+  line-height: 78px;
+  border-bottom: 4px solid transparent;
   transition: border-bottom .36s ease-in;
 }
 
 .navbar-link:hover {
   color: $dark-red;
-  // background: linear-gradient(180deg, #ffffff 0, #dedede);
-  // background: linear-gradient(180deg, #ffffff 0, rgba(128, 128, 128, 0.8));
-  // background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(127, 127, 127, 0.4) 50%, rgba(128, 128, 128, 0.8) 100%);
-  height: 79px;
-  line-height: 79px;
 
   &:not(.active) {
-    border-bottom: 3px solid rgba(128, 128, 128, 0.8);
+    border-bottom: 4px solid rgba(128, 128, 128, 0.8);
   }
 }
 
 .active {
-  border-bottom: 3px solid $dark-red;
+  border-bottom: 4px solid $dark-red;
 
   &:hover {
     background: transparent;
