@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
+    "@glidejs/glide": "^3.4.1",
     "babel-eslint": "^10.0.1"
   }
 }
