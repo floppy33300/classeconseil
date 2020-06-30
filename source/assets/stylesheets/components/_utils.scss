@@ -41,7 +41,7 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   font-size: 22px;
   color: $dark-red;
   text-align: center;
-  margin: 20px;
+  margin: 20px auto 5px auto;
 }
 
 .section {
@@ -53,6 +53,7 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   font-size: 28px;
   font-weight: 400;
   font-family: $headers-font;
+  margin-top: 0;
 }
 
 .text-white {
