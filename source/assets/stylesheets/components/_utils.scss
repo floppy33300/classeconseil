@@ -54,6 +54,7 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   font-weight: 400;
   font-family: $headers-font;
   margin-top: 0;
+  letter-spacing: 1px;
 }
 
 .text-white {
@@ -66,6 +67,13 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   width: 80%;
   background: radial-gradient(ellipse farthest-side at top center, #6b001e, transparent);
   margin: auto;
+}
+
+.separator {
+  margin: 20px auto;
+  width: 120px;
+  border-top: 3px solid #6B001E;
+  border-radius: 5px;
 }
 
 // scroll icon
