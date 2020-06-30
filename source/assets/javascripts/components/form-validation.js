@@ -1,7 +1,7 @@
-const name = document.querySelector('input[name="name"]');
-const phone = document.querySelector('input[name="phone"]');
+const name = document.querySelector('input[name="nom"]');
+const phone = document.querySelector('input[name="telephone"]');
 const email = document.querySelector('input[name="email"]');
-const subject = document.querySelector('input[name="subject"]');
+const subject = document.querySelector('input[name="sujet"]');
 const message = document.querySelector('textarea[name="message"]');
 
 const form = document.querySelector('.validate-form');
