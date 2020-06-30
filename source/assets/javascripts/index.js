@@ -3,6 +3,7 @@ import Glide, { Autoplay, Breakpoints } from '@glidejs/glide/dist/glide.modular.
 import { toogleNav } from './components/sidenav';
 import { handleFirstTab } from './components/keyboard_focus';
 import './components/tabs';
+import './components/form-validation';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);

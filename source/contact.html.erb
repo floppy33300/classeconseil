@@ -36,5 +36,46 @@ title: Contact - C.L.A.S.S.E. Conseil
       </div>
     </div>
   </div>
-  <div class="contact-form-wrapper"></div>
+  <div class="contact-form-wrapper">
+    <div class="contact1">
+      <div class="container-contact1">
+        <form class="contact1-form validate-form" action="https://formspree.io/xpzdaavg" method="POST">
+          <div class="row">
+            <div class="wrap-input1 validate-input" data-validate="Nom est obligatoire">
+              <label for="form-name" class="sr-only">Nom</label>
+              <input class="input1" id="form-name" type="text" name="nom" placeholder="Nom">
+            </div>
+            <div class="wrap-input1 validate-input" data-validate="Téléphone est obligatoire">
+              <label for="form-phone" class="sr-only">Téléphone</label>
+              <input class="input1" id="form-phone" type="tel" placeholder="Numéro de téléphone">
+              <span id="valid-msg" class="hide"><i class="fas fa-check"></i> Valide</span>
+              <span id="error-msg" class="hide"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="wrap-input1 validate-input" data-validate="un email valide est obligatoire: ex@abc.xyz">
+              <label for="form-email" class="sr-only">Email</label>
+              <input class="input1" id="form-email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="wrap-input1 validate-input" data-validate="sujet est obligatoire">
+              <label for="form-subject" class="sr-only">Sujet</label>
+              <input class="input1" id="form-subject" type="text" name="sujet" placeholder="Sujet">
+            </div>
+          </div>
+          <div class="validate-input" data-validate="Un message est obligatoire" id="message-area">
+            <label for="form-message" class="sr-only">Message</label>
+            <textarea class="input1" id="form-message" name="message" placeholder="Message"></textarea>
+          </div>
+          <div class="container-contact1-form-btn">
+            <button class="contact1-form-btn">
+              <span>
+                Envoyer
+                <i class="far fa-paper-plane"></i>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
