@@ -1,10 +1,9 @@
+const form = document.querySelector('.contact1-form');
 const name = document.querySelector('input[name="nom"]');
 const phone = document.querySelector('input[name="telephone"]');
 const email = document.querySelector('input[name="email"]');
 const subject = document.querySelector('input[name="sujet"]');
 const message = document.querySelector('textarea[name="message"]');
-
-const form = document.querySelector('.validate-form');
 
 function showValidate(input) {
   const thisAlert = input.parentElement;
@@ -44,18 +43,20 @@ function validateForm() {
   return check;
 }
 
-const inputs = document.querySelectorAll('.input1');
-inputs.forEach(input => {
-  input.addEventListener('blur', () => {
-    hideValidate(input);
+if (form) {
+  const inputs = document.querySelectorAll('.input1');
+  inputs.forEach(input => {
+    input.addEventListener('blur', () => {
+      hideValidate(input);
+    });
   });
-});
 
-form.addEventListener('submit', function(event) {
-  const validated = validateForm();
-  if (validated === false) {
-    event.preventDefault();
-  } else {
-    form.submit();
-  }
-});
+  form.addEventListener('submit', function(event) {
+    const validated = validateForm();
+    if (validated === false) {
+      event.preventDefault();
+    } else {
+      form.submit();
+    }
+  });
+}
