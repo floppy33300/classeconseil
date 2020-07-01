@@ -1,6 +1,10 @@
 .pratique_pro-page {
   counter-reset: title;
-  max-width: 800px;
+  max-width: 900px;
+
+  h4 {
+    margin-bottom: -5px;
+  }
 }
 
 .pratique_pro-titles {
@@ -31,106 +35,25 @@
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
-.analysis-wrapper {
+.analysis-wrapper,
+.process-wrapper,
+.tools-wrapper {
   ul {
     margin: 15px auto 15px 50px;
     line-height: 1.8em;
   }
 }
 
-/* Accordion styles */
-.process-wrapper,
-.tools-wrapper {
-  .row {
-    display: flex;
-
-    .col {
-      flex: 1;
-
-      &:last-child {
-        margin-left: 1em;
-      }
-    }
-  }
-
-  input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
+.process-wrapper {
+  margin: 100px auto;
 }
 
-.tabs {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+.accordion-wrapper {
+  margin: 50px auto;
+  width: 90%;
 }
 
-.tab {
-  width: 100%;
-  color: white;
-  overflow: hidden;
-
-  &-label {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    background: $dark-red;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-      background: #9e002c;
-    }
-
-    &::after {
-      content: "\276F";
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-  }
-
-  &-content {
-    max-height: 0;
-    padding: 0 1em;
-    color: black;
-    background: $white;
-    transition: all .35s;
-    margin: 15px auto 15px 50px;
-    line-height: 1.8em;
-  }
-
-  &-close {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1em;
-    font-size: 0.75em;
-    background: $dark-red;
-    cursor: pointer;
-
-    &:hover {
-      background: #9e002c;
-    }
-  }
-}
-
-// :checked
-input:checked {
-  +.tab-label {
-    background: #9e002c;
-
-    &::after {
-      transform: rotate(90deg);
-    }
-  }
-
-  ~.tab-content {
-    max-height: 100vh;
-    padding: 1em;
-  }
-}
-
-
+// accordion
 .accordion {
   background-color: $dark-red;
   color: $white;
@@ -143,8 +66,7 @@ input:checked {
   justify-content: space-between;
   padding: 1em;
   font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
 
   &::after {
     content: "\276F";
@@ -155,6 +77,14 @@ input:checked {
     margin-left: 5px;
     transition: 0.35s ease;
   }
+}
+
+.first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.last-child {
+  border-radius: 0 0 8px 8px;
 }
 
 .accordion-active:after {
@@ -168,9 +98,12 @@ input:checked {
 }
 
 .accordion-panel {
-  padding: 0 18px;
+  padding: 0 20px;
   background-color: $white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease-out;
+  border-color: rgba(128, 128, 128, 0.1);
+  border-style: solid;
+  border-width: 0 0.5px 0px 0.5px;
 }

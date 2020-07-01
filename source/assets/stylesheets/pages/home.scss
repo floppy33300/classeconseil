@@ -121,7 +121,7 @@ blockquote p:after {
   margin: 20px auto;
   width: fit-content;
 
-  h3 {
+  p {
     font-weight: 400;
     font-size: 18px;
   }
@@ -243,8 +243,6 @@ blockquote p:after {
 .reinsurance-items-inner {
   text-align: center;
 
-
-
   .nbr {
     font-weight: bolder;
     font-size: 22px;
@@ -254,6 +252,20 @@ blockquote p:after {
 
   .reinsurance-text {
     margin-top: 0;
+  }
+}
+
+.cta-catalogue {
+  text-align: center;
+  font-size: 18px;
+
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      ;
+    }
   }
 }
 

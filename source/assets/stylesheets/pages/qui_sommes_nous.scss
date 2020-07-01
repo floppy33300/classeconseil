@@ -1,7 +1,8 @@
 #job-title {
   text-align: center;
-  font-size: 24px;
-  margin: 50px auto;
+  font-size: 22px;
+  margin: 0 auto 50px auto;
+  font-weight: 600;
 }
 
 .bio {
@@ -12,6 +13,11 @@
     line-height: 1.8em;
     max-width: 800px;
     text-align: justify;
+  }
+
+  h2 {
+    margin: 60px auto 10px auto;
+    text-align: center;
   }
 }
 
@@ -50,17 +56,25 @@
   }
 }
 
+.certif-wrapper {
+  margin: 80px auto;
+}
+
+#certif-title {
+  margin: 0 auto 20px auto;
+}
+
 .certif {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   margin-bottom: 50px;
   margin-top: -15px;
 
   p {
     letter-spacing: 1px;
-    font-weight: bold;
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -83,10 +97,12 @@
 #qualiopi-logo {
   height: auto;
   width: 200px;
+  margin: 40px auto;
 }
 
 .diploma {
   text-align: center;
+  margin: 50px auto;
 }
 
 #diploma-list {
