@@ -55,11 +55,13 @@
 // accordion
 .accordion {
   background-color: $dark-red;
+  font-family: $body-font;
+  letter-spacing: 1px;
+  font-size: 15px;
   color: $white;
   cursor: pointer;
   width: 100%;
   border: none;
-  font-size: 17px;
   transition: 0.4s;
   display: flex;
   justify-content: space-between;
