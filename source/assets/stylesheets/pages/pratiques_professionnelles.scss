@@ -1,34 +1,57 @@
-h1 {
-  margin: 0;
-  line-height: 2;
-  text-align: center;
+.pratique_pro-page {
+  counter-reset: title;
+  max-width: 800px;
 }
 
-h2 {
-  margin: 0 0 .5em;
-  font-weight: normal;
+.pratique_pro-titles {
+  position: relative;
+  counter-increment: title;
+  font-size: 1.2rem;
+  margin: 1.75rem 2rem;
+  padding-left: 2.5rem;
+  text-decoration: underline;
 }
 
-input {
+.pratique_pro-titles:before {
+  content: counter(title)'.';
+  height: 2.5rem;
+  width: 2.5rem;
   position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-// Layout
-.row {
+  top: -1.1rem;
+  left: -1rem;
+  font-size: 1.1em;
+  padding: 0.15em 0.25em;
+  background: $dark-red;
+  color: $white;
+  border-radius: 1rem 1rem 0 1rem;
+  overflow: hidden;
   display: flex;
-
-  .col {
-    flex: 1;
-
-    &:last-child {
-      margin-left: 1em;
-    }
-  }
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 /* Accordion styles */
+.process-wrapper,
+.tools-wrapper {
+  .row {
+    display: flex;
+
+    .col {
+      flex: 1;
+
+      &:last-child {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
 .tabs {
   border-radius: 8px;
   overflow: hidden;
