@@ -28,6 +28,14 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.analysis-wrapper {
+  ul {
+    margin: 15px auto 15px 50px;
+    line-height: 1.8em;
+  }
 }
 
 /* Accordion styles */
@@ -67,30 +75,29 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: red;
+    background: $dark-red;
     font-weight: bold;
     cursor: pointer;
 
-    /* Icon */
     &:hover {
-      background: darken(red, 10%);
+      background: #9e002c;
     }
 
     &::after {
       content: "\276F";
-      width: 1em;
-      height: 1em;
       text-align: center;
-      transition: all .35s;
+      transition: all 0.3s ease;
     }
   }
 
   &-content {
     max-height: 0;
     padding: 0 1em;
-    color: red;
-    background: white;
+    color: black;
+    background: $white;
     transition: all .35s;
+    margin: 15px auto 15px 50px;
+    line-height: 1.8em;
   }
 
   &-close {
@@ -98,11 +105,11 @@
     justify-content: flex-end;
     padding: 1em;
     font-size: 0.75em;
-    background: red;
+    background: $dark-red;
     cursor: pointer;
 
     &:hover {
-      background: darken(red, 10%);
+      background: #9e002c;
     }
   }
 }
@@ -110,7 +117,7 @@
 // :checked
 input:checked {
   +.tab-label {
-    background: darken(red, 10%);
+    background: #9e002c;
 
     &::after {
       transform: rotate(90deg);
@@ -121,4 +128,49 @@ input:checked {
     max-height: 100vh;
     padding: 1em;
   }
+}
+
+
+.accordion {
+  background-color: $dark-red;
+  color: $white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+
+  &::after {
+    content: "\276F";
+    text-align: center;
+    font-size: 14px;
+    color: $white;
+    float: right;
+    margin-left: 5px;
+    transition: 0.35s ease;
+  }
+}
+
+.accordion-active:after {
+  content: "\276F";
+  transform: rotate(90deg);
+}
+
+.accordion-active,
+.accordion:hover {
+  background-color: #9e002c;
+}
+
+.accordion-panel {
+  padding: 0 18px;
+  background-color: $white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out;
 }
