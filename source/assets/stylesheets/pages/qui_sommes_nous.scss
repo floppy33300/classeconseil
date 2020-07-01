@@ -113,6 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: $light-gray;
   }
 }
 
@@ -122,5 +123,5 @@
   top: -5px;
   left: -15px;
   transform: rotate(14deg);
-  opacity: 0.8;
+  opacity: 0.9;
 }
