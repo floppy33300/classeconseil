@@ -12,7 +12,6 @@
     margin: 15px auto;
     line-height: 1.8em;
     max-width: 800px;
-    text-align: justify;
   }
 
   h2 {
@@ -44,13 +43,10 @@
 }
 
 .services-list-wrapper {
-  text-align: center;
-
   ul {
     margin: 15px auto;
     line-height: 1.8em;
     max-width: 800px;
-    text-align: justify;
     display: inline-block;
     list-style: inside;
   }
@@ -68,6 +64,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   margin-top: -15px;
 
@@ -136,4 +133,32 @@
   left: -15px;
   transform: rotate(14deg);
   opacity: 0.9;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+  #qualiopi-logo {
+    margin: 40px auto 10px;
+  }
+
+  .services-list-wrapper ul {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bio {
+
+    p,
+    ul {
+      text-align: justify;
+    }
+  }
+
+  .services-list-wrapper {
+    text-align: center;
+
+    ul {
+      text-align: justify;
+    }
+  }
 }

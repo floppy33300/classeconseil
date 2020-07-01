@@ -1,6 +1,5 @@
 .pratique_pro-page {
   counter-reset: title;
-  max-width: 900px;
 
   h4 {
     margin-bottom: -5px;
@@ -67,6 +66,7 @@
   padding: 1em;
   font-weight: bold;
   border: 1px solid white;
+  text-align: left;
 
   &::after {
     content: "\276F";
@@ -103,7 +103,25 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease-out;
-  border-color: rgba(128, 128, 128, 0.1);
-  border-style: solid;
-  border-width: 0 0.5px 0px 0.5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+
+  .analysis-wrapper,
+  .process-wrapper,
+  .tools-wrapper {
+    ul {
+      margin: 15px auto;
+    }
+  }
+
+  .accordion-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .pratique_pro-page {
+    max-width: 900px;
+  }
 }
