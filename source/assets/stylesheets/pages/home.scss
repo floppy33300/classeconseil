@@ -1,0 +1,376 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(https://res.cloudinary.com/dqszntd5j/image/upload/v1592929637/4a3c2087-000d-4b80-87f2-5b41da6daba6_twtrm8.jpg);
+  height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+
+  .banner-text {
+    margin-top: 50px;
+  }
+
+  h1 {
+    margin: 0 0 20px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  #conseil {
+    letter-spacing: 0.8rem;
+    margin-left: 1rem;
+  }
+
+  h2 {
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.btn-flat-outline {
+  margin: 20px 0;
+  color: $white;
+  padding: 10px 15px;
+  margin-bottom: 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid $dark-red;
+  background: $dark-red;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 1px 1px 6px 0px rgba(255, 255, 255, 0.75);
+  }
+}
+
+// subBanner section
+.quote {
+  margin-bottom: 40px;
+}
+
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+blockquote {
+  font-family: $headers-font;
+  position: relative;
+}
+
+blockquote p:before {
+  content: "\201C";
+  color: $dark-red;
+  font-size: 8em;
+  position: absolute;
+  top: -70%;
+  left: -3%;
+}
+
+blockquote p:after {
+  content: "\201D";
+  color: $dark-red;
+  font-size: 8em;
+  position: absolute;
+  top: 24%;
+  right: 5%;
+}
+
+.quote-text p {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+  max-width: 700px;
+  margin: 8px 20px 0 20px;
+  padding: 0 20px;
+}
+
+.introduction {
+
+  margin: 80px auto 0;
+}
+
+#intro-logo {
+  width: 200px;
+  height: auto;
+}
+
+#sub-banner-title {
+  margin: -10px auto 20px;
+  font-size: 22px;
+}
+
+.xp {
+  margin: 20px auto;
+  width: fit-content;
+
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+.fa-check {
+  padding-right: 10px;
+}
+
+// services section
+.services-cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.card-full-link {
+  text-decoration: none;
+  color: black;
+}
+
+.services-card {
+  font-size: 14px;
+  font-weight: lighter;
+  width: 250px;
+  height: 300px;
+  background: $light-gray;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 7px 6px 15px -5px rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s linear;
+  margin: 20px;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 6px 15px -5px rgba(0, 0, 0, 1);
+  }
+}
+
+.icons {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50px;
+  font-size: 32px;
+  background: $dark-red;
+  position: relative;
+  margin: auto;
+
+  i {
+    position: absolute;
+    color: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.sep-card {
+  width: 90%;
+  text-align: center;
+  margin: 40px auto 20px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-links {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .fa-arrow-right {
+    padding-left: 5px;
+    font-size: 13px;
+  }
+}
+
+// reinsurance section v1 circle neomorphism
+.reinsurance-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: fit-content;
+}
+
+.reinsurance-items {
+  width: 180px;
+}
+
+.reinsurance-pastille {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  background: $dark-red;
+  position: relative;
+  box-shadow: inset 7px -7px 10px rgba(89, 0, 25, 0.4), inset -7px 7px 10px #7d0023;
+  margin: auto;
+
+  i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+  }
+}
+
+.reinsurance-items-inner {
+  text-align: center;
+
+
+
+  .nbr {
+    font-weight: bolder;
+    font-size: 22px;
+    margin: 10px auto 0;
+    color: $dark-red;
+  }
+
+  .reinsurance-text {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: calc(100vh - 80px);
+  }
+
+  .quote {
+    padding: 0;
+  }
+
+  .quote-wrapper {
+    margin: 0 auto 20px auto;
+  }
+
+  .quote-text {
+    p {
+      margin: 0 auto;
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+
+  blockquote p:before {
+    font-size: 6em;
+    top: -35%;
+    left: -9%;
+  }
+
+  blockquote p:after {
+    font-size: 6em;
+    top: 55%;
+    right: 0;
+  }
+
+  .introduction {
+    margin: 0 auto;
+  }
+
+  .wrapper-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 813px) {
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+  .banner {
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 20px auto 0;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .banner-text {
+      margin-top: 0;
+    }
+  }
+
+  .btn-flat-outline {
+    margin: 50px 0;
+  }
+
+  .xp {
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .reinsurance-wrapper {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .icon-scroll {
+    display: none;
+  }
+
+  .btn-flat-outline {
+    margin: 40px auto 0;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .page-title {
+    display: block;
+  }
+
+  #conseil {
+    letter-spacing: 0.5rem;
+    margin-left: 0;
+  }
+}
