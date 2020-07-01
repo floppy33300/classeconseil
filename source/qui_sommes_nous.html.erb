@@ -6,68 +6,61 @@ title: Qui sommes-nous - C.L.A.S.S.E. Conseil
   <h2 class="section-title">Présentation</h2>
   <hr class="separator">
   <div class="bio">
-    <h3>Psychologue, Consultante et Formatrice Ressources Humaines
+    <h3 id=job-title>Psychologue, Consultante et Formatrice Ressources Humaines
       Dirigeante de CLASSE Conseil depuis 1992.</h3>
-    <p>Très sensibilisée aux problématiques de l’optimisation des pratiques professionnelles <strong>en lien avec le
-        développement personnel des individus en situation de travail</strong>, je milite et m’investis dans <strong>le
-        bien-être au travail et la qualité de vie au travail</strong> comme principal levier de l’épanouissement
-      personnel et de la performance collective.</p>
-    <h3>Mes points forts</h3>
-    <p>Une expertise dans les techniques de l’accompagnement individuel et/ou collectif construite sur 28 années
-      d’exercice professionnel et une connaissance approfondie des problématiques professionnelles dans des contextes
-      stables et instables.</p>
-    <h3>Missions majeures</h3>
-    <p>Spécialisée dans le <strong>développement des compétences</strong> : nos missions consistent à
-      <strong>accompagner, former, conseiller</strong>,
-      soit dans le domaine du <strong>développement personnel</strong>, soit dans le domaine du <strong>Management
-        hiérarchique</strong>, du <strong>Management transversal</strong> ou du <strong>Management de la
-        transition</strong>.</p>
-    <p>Nous analysons les besoins avec les clients, co construits avec eux des actions individuelles ou collectives
-      adaptées. Nous conduisons les actions confiées avec le plus grand soin et la même démarche déontologique: une
-      obligation de moyens pour une obligation de résultat. Quelque soit le secteur d'activité concerné, nous instaurons
-      une relation de confiance avec nos clients et nous nous engageons dans une relation partenariale durable. </p>
-    <h3>Nos pratiques professionnelles</h3>
-    <ul>
-      <li>Animation de dispositif de formation intéractive</li>
-      <li>Animation de séminaire en résidentiel</li>
-      <li>Analyse des pratiques professionnelles</li>
-      <li>Accompagnement au changement</li>
-      <li>Accompagnement à l'élaboration de projets</li>
-      <li>Accompagnement à la démarche d'évaluation et de prévention des RPS</li>
-      <li>Coaching individuel et d'équipe</li>
-    </ul>
-    <p>Rendez-vous sur la page <%= link_to 'Pratiques Professionnelles', '/pratiques_professionnelles.html' %> pour en
-      savoir plus.</p>
+    <p>Très sensibilisée aux problématiques de l’optimisation des pratiques professionnelles <strong>en lien avec le développement personnel des individus en situation de travail</strong>, je milite et m’investis dans <strong>le bien-être au travail et la qualité de vie au travail</strong> comme principal levier de l’épanouissement personnel et de la performance collective.</p>
+    <div class="separator-gradient margin-50"></div>
+    <div class="about-item">
+      <h3 class="about-item-title">Mes points forts</h3>
+      <p>Une expertise dans les techniques de l’accompagnement individuel et/ou collectif construite sur 28 années d’exercice professionnel et une connaissance approfondie des problématiques professionnelles dans des contextes stables et instables.</p>
+    </div>
+    <div class="about-item">
+      <h3 class="about-item-title">Missions majeures</h3>
+      <p>Spécialisée dans le <strong>développement des compétences</strong> : nos missions consistent à <strong>accompagner, former, conseiller</strong>, soit dans le domaine du <strong>développement personnel</strong>, soit dans le domaine du <strong>Management hiérarchique</strong>, du <strong>Management transversal</strong> ou du <strong>Management de la transition</strong>.</p>
+      <p>Nous analysons les besoins avec les clients, co construits avec eux des actions individuelles ou collectives adaptées. Nous conduisons les actions confiées avec le plus grand soin et la même démarche déontologique: une obligation de moyens pour une obligation de résultat. Quelque soit le secteur d'activité concerné, nous instaurons une relation de confiance avec nos clients et nous nous engageons dans une relation partenariale durable.</p>
+    </div>
+    <div class="about-item" id="services-list">
+      <h3 class="about-item-title">Nos pratiques professionnelles</h3>
+      <div class="services-list-wrapper">
+        <ul>
+          <li>Animation de dispositif de formation intéractive</li>
+          <li>Animation de séminaire en résidentiel</li>
+          <li>Analyse des pratiques professionnelles</li>
+          <li>Accompagnement au changement</li>
+          <li>Accompagnement à l'élaboration de projets</li>
+          <li>Accompagnement à la démarche d'évaluation et de prévention des RPS</li>
+          <li>Coaching individuel et d'équipe</li>
+        </ul>
+      </div>
+      <p>Rendez-vous sur la page <%= link_to 'Pratiques Professionnelles', '/pratiques_professionnelles.html' %> pour en savoir plus.</p>
+    </div>
   </div>
+  <div class="separator-gradient margin-50"></div>
   <div class="schema">
-
   </div>
   <div class="references">
-    <h3>Références</h3>
+    <h3 class="about-item-title">Certifications</h3>
     <div class="certif">
-      <ul>
-        <li>
-          <p>DATADOCK</p>
-          <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593534613/datadock-logo.png', alt: "Datadock - certification logo", id: "datadock-logo" %>
-        </li>
-        <li>
-          <p>QUALIOPI (en cours de procédure)</p>
-          <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593535013/qualiopi-logo.png', alt: "Qualiopi - certification logo", id: "qualiopi-logo" %>
-        </li>
-      </ul>
-
+      <div class="datadock">
+        <p>DATADOCK</p>
+        <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593534613/datadock-logo.png', alt: "Datadock - certification logo", id: "datadock-logo", class:"certif-logos" %>
+      </div>
+      <div class="qualiopi">
+        <p>QUALIOPI (en cours de procédure)</p>
+        <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593535013/qualiopi-logo.png', alt: "Qualiopi - certification logo", id: "qualiopi-logo", class:"certif-logos" %>
+      </div>
     </div>
     <div class="diploma">
-      <ul>
-        <li>Maîtrise en sciences économiques</li>
-        <li>DESS de gestion du personnel</li>
-        <li>Cursus DEA en économie des Ressources Humaines</li>
-        <li>DESS de psychologie clinique</li>
-        <li>Certificat de psychopathologie</li>
-        <li>Certification A.T.</li>
-        <li>Habilitation test SOSIE 2nd génération</li>
+      <h3 class="about-item-title">Diplômes</h3>
+      <ul id="diploma-list">
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Maîtrise en sciences économiques</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>DESS de gestion du personnel</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Cursus DEA en économie des Ressources Humaines</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>DESS de psychologie clinique</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Certificat de psychopathologie</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Certification A.T.</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Habilitation test SOSIE 2nd génération</li>
       </ul>
     </div>
-
   </div>
 </section>
