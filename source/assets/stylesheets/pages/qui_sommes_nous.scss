@@ -1,0 +1,164 @@
+#job-title {
+  text-align: center;
+  font-size: 22px;
+  margin: 0 auto 50px auto;
+  font-weight: 600;
+}
+
+.bio {
+
+  p,
+  ul {
+    margin: 15px auto;
+    line-height: 1.8em;
+    max-width: 800px;
+  }
+
+  h2 {
+    margin: 60px auto 10px auto;
+    text-align: center;
+  }
+}
+
+.about-item {
+  margin: 50px auto;
+}
+
+.about-item-title {
+  text-align: center;
+  text-decoration: underline;
+  margin: 40px auto;
+}
+
+#pratiques_pro {
+  width: 100%;
+
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.services-list-wrapper {
+  ul {
+    margin: 15px auto;
+    line-height: 1.8em;
+    max-width: 800px;
+    display: inline-block;
+    list-style: inside;
+  }
+}
+
+.certif-wrapper {
+  margin: 80px auto;
+}
+
+#certif-title {
+  margin: 0 auto 20px auto;
+}
+
+.certif {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: -15px;
+
+  p {
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.datadock,
+.qualiopi {
+  margin: 0 50px;
+  text-align: center;
+}
+
+.certif-logos {
+  margin: 10px auto;
+}
+
+
+#datadock-logo {
+  height: 100px;
+  width: auto;
+}
+
+#qualiopi-logo {
+  height: auto;
+  width: 200px;
+  margin: 40px auto;
+}
+
+.diploma {
+  text-align: center;
+  margin: 50px auto;
+}
+
+#diploma-list {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+
+  li {
+    position: relative;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    margin: 0.8rem;
+    padding: 1.5rem;
+    list-style: none;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $light-gray;
+  }
+}
+
+.stamps {
+  width: 35px;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  transform: rotate(14deg);
+  opacity: 0.9;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+  #qualiopi-logo {
+    margin: 40px auto 10px;
+  }
+
+  .services-list-wrapper ul {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bio {
+
+    p,
+    ul {
+      text-align: justify;
+    }
+  }
+
+  .services-list-wrapper {
+    text-align: center;
+
+    ul {
+      text-align: justify;
+    }
+  }
+}

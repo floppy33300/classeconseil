@@ -30,12 +30,11 @@
 }
 
 .contact-items-content {
-  font-family: $headers-font;
   width: 190px;
 
   h3 {
     margin: 10px auto 15px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 600;
   }
 
@@ -151,14 +150,15 @@ textarea.input1+.shadow-input1 {
   box-sizing: border-box;
   width: 100%;
   display: block;
-  // background: rgba(244, 244, 244, 0.65);
+  background: $light-gray;
   font-family: $body-font;
   font-size: 14px;
   line-height: 1.5;
   color: $logo-gray;
   border-radius: 25px;
-  border: 1px solid rgba(128, 128, 128, 0.2);
+  border: 1px solid rgba(128, 128, 128, 0.1);
   transition: all 0.4s ease;
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
 }
 
 .input1::placeholder {

@@ -1,46 +1,44 @@
-<section class="footer">
+<section class="footer section">
   <div class="footer-menu">
     <div class="footer-logo-container">
       <% link_to "/index.html", 'aria-label': "Back to Home" do %>
-        <%= image_tag "https://res.cloudinary.com/dqszntd5j/image/upload/v1592933200/logo.png", alt: "C.L.A.S.S.E. Conseil - Logo", id:"nav-logo-left" %>
+        <%= image_tag "https://res.cloudinary.com/dqszntd5j/image/upload/v1592933200/logo.png", alt: "C.L.A.S.S.E. Conseil - Logo", class:"nav-logo-left" %>
       <% end %>
     </div>
     <div class="footer-info">
       <div class="footer-lists">
         <p class="footer-list-title"><%= link_to "Qui sommes-nous?", "/qui_sommes_nous.html", class:"footer-link" %></p>
         <ul class="footer-list">
-          <li><%= link_to "Points forts", "/point_forts.html", class:"footer-link" %></li>
-          <li><%= link_to "Missions majeures", "/mission_majeures.html", class:"footer-link" %></li>
-          <li><%= link_to "Pratiques Profesionnelles", "/pratiques_professionnelles.html", class:"footer-link" %></li>
-          <li><%= link_to "Certifications & Diplômes", "/certification_dipolomes.html", class:"footer-link" %></li>
+          <li><%= link_to "Points forts", "/qui_sommes_nous.html#points-fort", class:"footer-link" %></li>
+          <li><%= link_to "Missions majeures", "/qui_sommes_nous.html#missions", class:"footer-link" %></li>
+          <li><%= link_to "Pratiques Professionnelles", "/qui_sommes_nous.html#pratiques_pro", class:"footer-link" %></li>
+          <li><%= link_to "Certifications & Diplômes", "/qui_sommes_nous.html#diplomas", class:"footer-link" %></li>
         </ul>
       </div>
       <div class="footer-lists">
         <p class="footer-list-title"><%= link_to "Formations", "/formations.html", class:"footer-link" %></p>
         <ul class="footer-list">
-          <li><%= link_to "RH", "/RH.html", class:"footer-link" %></li>
-          <li><%= link_to "Bilan de competences", "/bilan_competence.html", class:"footer-link" %></li>
+          <li><%= link_to "Catalogue formations", "/formations.html", class:"footer-link" %></li>
+          <li><%= link_to "Bilan de competences", "/formations.html", class:"footer-link" %></li>
         </ul>
       </div>
       <div class="footer-lists">
-        <p class="footer-list-title">Legal</p>
+        <p class="footer-list-title"><%= link_to "Légal", "", class:"footer-link" %></p>
         <ul class="footer-list">
-          <li><%= link_to "Mentions Légales/CGV", "/mention_legale_cgv.html", class:"footer-link" %></li>
-          <li><%= link_to "Politique de confidentialité", "/politique_confidentialite.html", class:"footer-link" %></li>
+          <li><%= link_to "Mentions Légales/CGV", "", class:"footer-link" %></li>
+          <li><%= link_to "Politique de confidentialité", "", class:"footer-link" %></li>
         </ul>
-
       </div>
     </div>
     <div class="footer-btn hidden-md-down">
       <%= link_to "Prendre un Rendez-vous", "contact.html", class:"btn-contact-footer" %>
     </div>
-
   </div>
   <div class="separator-gradient-footer"></div>
   <div class="footer-copyright container">
     <p>© C.L.A.S.S.E. CONSEIL 2020. Tous droits réservés</p>
     <div class="footer-links">
-      <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/corine-pesier-73975a5b/" target="_blank" rel="noopener noreferrer" class="pre-nav-link"></a>
+      <a href="https://www.linkedin.com/in/corine-pesier-73975a5b/" target="_blank" rel="noopener noreferrer" class="pre-nav-link"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
     <div id="colophon">

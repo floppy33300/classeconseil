@@ -1,4 +1,69 @@
 ---
 title: Qui sommes-nous - C.L.A.S.S.E. Conseil
 ---
-<h1>Qui sommes-nous</h1>
+<section class="about-page section container">
+  <p class="mini-title">Qui sommes-nous</p>
+  <h2 class="section-title">Présentation</h2>
+  <hr class="separator">
+  <div class="bio">
+    <h2>Corine Pesier</h2>
+    <h3 id=job-title>Psychologue, Consultante et Formatrice Ressources Humaines
+      Dirigeante de CLASSE Conseil depuis 1992.</h3>
+    <p>Très sensibilisée aux problématiques de l’optimisation des pratiques professionnelles <strong>en lien avec le développement personnel des individus en situation de travail</strong>, je milite et m’investis dans <strong>le bien-être au travail et la qualité de vie au travail</strong> comme principal levier de l’épanouissement personnel et de la performance collective.</p>
+    <div class="separator-gradient margin-50"></div>
+    <div class="about-item" id="points-fort">
+      <h3 class="about-item-title">Mes points forts</h3>
+      <p>Une expertise dans les techniques de l’accompagnement individuel et/ou collectif construite sur 28 années d’exercice professionnel et une connaissance approfondie des problématiques professionnelles dans des contextes stables et instables.</p>
+    </div>
+    <div class="about-item" id="missions">
+      <h3 class="about-item-title">Missions majeures</h3>
+      <p>Spécialisée dans le <strong>développement des compétences</strong> : nos missions consistent à <strong>accompagner, former, conseiller</strong>, soit dans le domaine du <strong>développement personnel</strong>, soit dans le domaine du <strong>Management hiérarchique</strong>, du <strong>Management transversal</strong> ou du <strong>Management de la transition</strong>.</p>
+      <p>Nous analysons les besoins avec les clients, co construits avec eux des actions individuelles ou collectives adaptées. Nous conduisons les actions confiées avec le plus grand soin et la même démarche déontologique: une obligation de moyens pour une obligation de résultat. Quelque soit le secteur d'activité concerné, nous instaurons une relation de confiance avec nos clients et nous nous engageons dans une relation partenariale durable.</p>
+    </div>
+    <div class="about-item" id="pratiques_pro">
+      <h3 class="about-item-title">Nos pratiques professionnelles</h3>
+      <div class="services-list-wrapper">
+        <ul>
+          <li>Animation de dispositif de formation intéractive</li>
+          <li>Animation de séminaire en résidentiel</li>
+          <li>Analyse des pratiques professionnelles</li>
+          <li>Accompagnement au changement</li>
+          <li>Accompagnement à l'élaboration de projets</li>
+          <li>Accompagnement à la démarche d'évaluation et de prévention des RPS</li>
+          <li>Coaching individuel et d'équipe</li>
+        </ul>
+      </div>
+      <p>Rendez-vous sur la page <%= link_to 'Pratiques Professionnelles', '/pratiques_professionnelles.html' %> pour en savoir plus.</p>
+    </div>
+  </div>
+  <div class="separator-gradient margin-50"></div>
+  <div class="schema">
+  </div>
+  <div class="references" id="diplomas">
+    <div class="diploma">
+      <h3 class="about-item-title">Diplômes & Habilitation</h3>
+      <ul id="diploma-list">
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Maîtrise en sciences économiques</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>DESS de gestion du personnel</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Cursus DEA en économie des Ressources Humaines</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>DESS de psychologie clinique</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Certificat de psychopathologie</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Certification A.T.</li>
+        <li><%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593609025/stamp2.png', alt: "", class:"stamps" %>Habilitation test SOSIE 2nd génération</li>
+      </ul>
+    </div>
+    <div class="certif-wrapper">
+      <h3 class="about-item-title" id="certif-title">Certifications</h3>
+      <div class="certif">
+        <div class="datadock">
+          <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593534613/datadock-logo.png', alt: "Datadock - certification logo", id: "datadock-logo", class:"certif-logos" %>
+          <p>DATADOCK</p>
+        </div>
+        <div class="qualiopi">
+          <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1593535013/qualiopi-logo.png', alt: "Qualiopi - certification logo", id: "qualiopi-logo", class:"certif-logos" %>
+          <p>QUALIOPI (en cours de procédure)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
