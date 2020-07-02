@@ -4,9 +4,15 @@ import { toogleNav } from './components/sidenav';
 import { handleFirstTab } from './components/keyboard_focus';
 import './components/tabs';
 import './components/form-validation';
+import { checkScrollToTop } from './components/back_to_top';
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
+
+// back top top btn
+window.addEventListener('scroll', () => {
+  checkScrollToTop();
+});
 
 // sidenav
 const sidenavTrigger = document.getElementById('sidenav-trigger');
