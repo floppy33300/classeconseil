@@ -2,8 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const glob = require('glob');
 const postcssPresetEnv = require('postcss-preset-env');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -55,6 +55,6 @@ module.exports = {
     }),
   ],
   optimization: {
-    minimizer: [new UglifyJsPlugin()],
+    minimizer: [new TerserPlugin()],
   },
 };
