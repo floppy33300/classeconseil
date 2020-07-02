@@ -5,6 +5,7 @@
   background-position: center bottom;
   color: white;
   font-size: 14px;
+  padding: 20px 0;
 }
 
 .footer-menu {
@@ -17,7 +18,7 @@
 .btn-contact-footer {
   background: $dark-red;
   color: white;
-  padding: 10px 20px;
+  padding: 13px 20px;
   border-radius: 50px;
   font-size: 14px;
   text-decoration: none;
@@ -28,7 +29,7 @@
   color: $dark-red;
   background: white;
   border: 1px solid $dark-red;
-  box-shadow: 1px 1px 0px 0px rgba(107, 0, 30, 0.5);
+  box-shadow: 1px 1px 0px 0px rgba(107, 39, 58, 0.8);
 }
 
 .footer-info {
@@ -40,17 +41,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px auto;
+
+  p {
+    font-weight: lighter;
+    font-size: 13px;
+  }
 }
 
 .footer-lists {
-  margin:  0px auto;
+  margin: 0 40px;
 }
 
 .footer-list {
   list-style-type: none;
   padding: 0px;
-  min-width: 250px;
 
+  li {
+    padding: 2px 0;
+  }
 }
 
 .footer-list-title {
@@ -68,4 +77,9 @@
 .footer-link {
   color: white;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.75;
+    ;
+  }
 }
