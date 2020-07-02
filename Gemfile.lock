@@ -194,6 +194,3 @@ DEPENDENCIES
   middleman-pry
   pry-byebug
   sassc (~> 2.4)
-
-BUNDLED WITH
-   2.1.4
