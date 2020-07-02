@@ -1,0 +1,81 @@
+.back_to_top {
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 20;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: slideOutRight;
+}
+
+.back_to_top.show {
+  opacity: 1;
+  visibility: visible;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: slideInRight;
+
+}
+
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+#backToTop {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $dark-red;
+  padding: 0;
+  border: 2px solid $white;
+  opacity: 0.8;
+}
+
+#backToTop:hover {
+  opacity: 1;
+}
+
+.fa-arrow-up {
+  color: $white;
+  font-size: 24px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
+  .back_to_top {
+    bottom: 20px;
+  }
+
+  #backToTop {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fa-arrow-up {
+    font-size: 18px;
+  }
+}
