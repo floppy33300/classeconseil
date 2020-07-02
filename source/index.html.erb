@@ -32,9 +32,18 @@ title: C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)
       <div class="wrapper-right">
         <h2 class="section-title" id="sub-banner-title">28 années d'expertise dans:</h2>
         <div class="xp">
-          <p><i class="fas fa-check"></i>L’accompagnement individuel et collectif</p>
-          <p><i class="fas fa-check"></i>Le bilan de compétences</p>
-          <p><i class="fas fa-check"></i>La formation</p>
+          <p>
+            <i class="fas fa-check"></i>
+            <%= link_to 'L’accompagnement individuel et collectif', '/pratiques_professionnelles.html#process-anchor' %>
+          </p>
+          <p>
+            <i class="fas fa-check"></i>
+            <%= link_to 'Le bilan de compétences', '/formations.html' %>
+          </p>
+          <p>
+            <i class="fas fa-check"></i>
+            <%= link_to 'La formation', '/formations.html' %>
+          </p>
         </div>
       </div>
     </div>
@@ -45,7 +54,7 @@ title: C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)
     <h2 class="section-title">Ensemble,</h2>
     <div class="services-cards-wrapper">
       <div class="card">
-        <% link_to '/pratiques_professionnelles.html', class: "card-full-link"  do %>
+        <% link_to '/pratiques_professionnelles.html#analysis-anchor', class: "card-full-link"  do %>
           <div class="services-card analyse">
             <div class="icons">
               <i class="fas fa-chart-line"></i>
@@ -54,12 +63,12 @@ title: C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos commodi
               consequatur perspiciatis</p>
             <hr class="sep-card">
-            <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/pratiques_professionnelles.html", class: "card-links" %>
+            <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/pratiques_professionnelles.html#analysis-anchor", class: "card-links" %>
           </div>
         <% end %>
       </div>
       <div class="card">
-        <% link_to '/pratiques_professionnelles.html', class: "card-full-link"  do %>
+        <% link_to '/pratiques_professionnelles.html#process-anchor', class: "card-full-link"  do %>
           <div class="services-card steps-definition">
             <div class="icons">
               <i class="fas fa-cogs"></i>
@@ -68,12 +77,12 @@ title: C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi vero aliquid explicabo
               commodi cumque</p>
             <hr class="sep-card">
-            <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/formations.html", class: "card-links" %>
+            <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/formations.html#process-anchor", class: "card-links" %>
           </div>
         <% end %>
       </div>
       <div class="card">
-        <% link_to '/pratiques_professionnelles.html', class: "card-full-link"  do %>
+        <% link_to '/pratiques_professionnelles.html#tools-anchor', class: "card-full-link"  do %>
           <div class="services-card tools">
             <div class="icons">
               <i class="fas fa-wrench"></i>
@@ -82,7 +91,7 @@ title: C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi vero aliquid explicabo
               commodi cumque</p>
             <hr class="sep-card">
-            <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/formations.html", class: "card-links" %>
+            <%= link_to 'En savoir plus <i class="fas fa-arrow-right"></i>', "/formations.html#tools-anchor", class: "card-links" %>
           </div>
         <% end %>
       </div>

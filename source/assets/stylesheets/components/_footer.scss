@@ -163,10 +163,10 @@
     }
   }
 
-  .footer-menu {
-    display: flex;
-    flex-direction: column;
-  }
+  // .footer-menu {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
   #copyright {
     max-width: 100%;
@@ -192,7 +192,7 @@
 
 @media screen and (max-width: 1099px) {
   .footer-logo-container {
-    margin: 10px auto;
+    margin: 10px auto 0;
   }
 
   .footer-info {
@@ -201,5 +201,13 @@
 
   .footer-lists {
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 813px) {
+  .footer-info {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
   }
 }

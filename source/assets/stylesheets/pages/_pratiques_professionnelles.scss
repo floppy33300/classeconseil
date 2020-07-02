@@ -13,6 +13,7 @@
   margin: 1.75rem 2rem;
   padding-left: 2.5rem;
   text-decoration: underline;
+  font-weight: 600;
 }
 
 .pratique_pro-titles:before {
@@ -26,11 +27,11 @@
   padding: 0.15em 0.25em;
   background: $dark-red;
   color: $white;
-  border-radius: 1rem 1rem 0 1rem;
+  border-radius: 50%;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 

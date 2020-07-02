@@ -103,8 +103,17 @@ blockquote p:after {
 }
 
 .introduction {
-
   margin: 80px auto 0;
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+  }
 }
 
 #intro-logo {
