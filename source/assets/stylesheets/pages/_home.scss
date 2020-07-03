@@ -427,3 +427,11 @@ blockquote p:after {
     justify-content: center;
   }
 }
+
+
+
+@media (max-height: 420px) {
+  .icon-scroll {
+    display: none;
+  }
+}
