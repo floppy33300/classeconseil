@@ -25,7 +25,6 @@
   color: white;
   padding: 13px 20px;
   border-radius: 50px;
-  font-size: 14px;
   text-decoration: none;
   border: 1px solid $dark-red;
 }
@@ -163,11 +162,6 @@
     }
   }
 
-  // .footer-menu {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
   #copyright {
     max-width: 100%;
 
@@ -210,4 +204,10 @@
     margin: 20px auto;
     width: fit-content;
   }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  // .btn-contact-footer {
+  //   font-size: 14px;
+  // }
 }

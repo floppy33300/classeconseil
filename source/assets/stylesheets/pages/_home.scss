@@ -5,7 +5,7 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(https://res.cloudinary.com/dqszntd5j/image/upload/v1592929637/4a3c2087-000d-4b80-87f2-5b41da6daba6_twtrm8.jpg);
-  height: calc(100vh - 130px);
+  min-height: calc(100vh - 130px);
   display: flex;
   align-items: center;
 
@@ -117,7 +117,7 @@ blockquote p:after {
 }
 
 #intro-logo {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
@@ -266,7 +266,6 @@ blockquote p:after {
 
 .cta-catalogue {
   text-align: center;
-  font-size: 18px;
 
   a {
     color: black;
@@ -280,7 +279,7 @@ blockquote p:after {
 
 @media only screen and (max-width: 767px) {
   .banner {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
   }
 
   .quote {
@@ -329,13 +328,14 @@ blockquote p:after {
   }
 }
 
-@media (min-width: 813px) {
+@media (min-width: 812px) {
   .page-title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 812px) {
   .banner {
@@ -375,9 +375,32 @@ blockquote p:after {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+// phones
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .icon-scroll {
     display: none;
+  }
+
+  #sub-banner-title {
+    font-size: 18px;
+  }
+
+  .xp p {
+    font-size: 15px
+  }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner .banner-text {
+    margin-top: 15px;
+    padding-bottom: 25px;
   }
 
   .btn-flat-outline {
@@ -385,7 +408,7 @@ blockquote p:after {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .page-title {
     display: block;
   }
@@ -393,5 +416,14 @@ blockquote p:after {
   #conseil {
     letter-spacing: 0.5rem;
     margin-left: 0;
+  }
+}
+
+// ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -35,6 +35,13 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   height: 100%;
 }
 
+// disable font zoom for mobile on orientation changes
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
 // App titles utils
 .mini-title {
   font-style: italic;
