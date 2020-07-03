@@ -1,30 +1,30 @@
-#notfound {
+.error-page-wrapper {
   position: relative;
-  height: 100vh;
+  min-height: calc(100vh - 130px);
 }
 
-#notfound .notfound {
+.error-page-wrapper .error {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.notfound {
+.error {
   max-width: 520px;
   width: 100%;
   line-height: 1.4;
   text-align: center;
 }
 
-.notfound .notfound-404 {
+.error .notfound {
   position: relative;
   height: 200px;
   margin: 0px auto 20px;
   z-index: -1;
 }
 
-.notfound .notfound-404 h1 {
+.error .notfound h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 236px;
   font-weight: 200;
@@ -35,9 +35,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  letter-spacing: 0;
 }
 
-.notfound .notfound-404 h2 {
+.error .notfound h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -48,12 +49,11 @@
   margin: auto;
   display: inline-block;
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
+  bottom: 0;
+  left: 10%;
 }
 
-.notfound a {
+.error a {
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
   font-weight: 700;
@@ -62,39 +62,74 @@
   text-transform: uppercase;
   padding: 13px 23px;
   background: $dark-red;
-  font-size: 18px;
-  transition: 0.2s all;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  border: 1px solid $dark-red;
+  border-radius: 5px;
 }
 
-.notfound a:hover {
+.error a:hover {
   color: $dark-red;
   background: $white;
-  border: solid;
-  border-color: $dark-red;
+  border: 1px solid $dark-red;
 }
 
 @media only screen and (max-width: 767px) {
-  .notfound .notfound-404 h1 {
+  .error .notfound h1 {
     font-size: 148px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .notfound .notfound-404 {
+  .error .notfound {
     height: 148px;
     margin: 0px auto 10px;
   }
 
-  .notfound .notfound-404 h1 {
-    font-size: 86px;
+  .error .notfound h1 {
+    font-size: 90px;
   }
 
-  .notfound .notfound-404 h2 {
+  .error .notfound h2 {
     font-size: 16px;
   }
 
   .notfound a {
-    padding: 7px 15px;
+    padding: 15px;
     font-size: 14px;
+  }
+}
+
+// phones
+@media only screen and (min-device-width: 320px) and (max-device-width: 811px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .error-page-wrapper {
+    height: calc(100vh - 80px);
+  }
+
+  .notfound .notfound h2 {
+    bottom: 10%;
+    left: 20%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 811px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .error-page-wrapper {
+    min-height: calc(100vh - 80px);
+  }
+
+  .error .notfound h2 {
+    left: 12%;
+    top: 65%;
+  }
+}
+
+// ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .error .notfound h1 {
+    font-size: 200px;
+  }
+
+  .error .notfound h2 {
+    left: 10%;
   }
 }
