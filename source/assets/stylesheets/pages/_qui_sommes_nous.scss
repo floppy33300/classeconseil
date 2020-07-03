@@ -162,3 +162,16 @@
     }
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  #job-title {
+    font-size: 16px;
+  }
+
+  .services-list-wrapper {
+    ul {
+      font-size: 15px;
+    }
+  }
+
+}
