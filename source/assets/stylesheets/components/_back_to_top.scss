@@ -1,7 +1,7 @@
 .back_to_top {
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 10px;
   transition: all .5s ease-in-out;
   opacity: 0;
   visibility: hidden;
@@ -69,14 +69,14 @@
 @media (max-width: 812px) {
   .back_to_top {
     bottom: 15px;
-    right: 15px;
+    right: 5px;
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
   .back_to_top {
     bottom: 15px;
-    right: 10px;
+    right: 5px;
   }
 
   .fa-arrow-up {

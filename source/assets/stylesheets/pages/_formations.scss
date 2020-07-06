@@ -1,0 +1,20 @@
+.catalogue-wrapper {
+  ol {
+    list-style: none;
+    counter-reset: formation-counter;
+    margin: 20px auto;
+    line-height: 2em;
+
+  }
+
+  li {
+    counter-increment: formation-counter;
+    position: relative;
+  }
+
+  li::before {
+    content: counter(formation-counter) ' - ';
+    // color: $logo-gray;
+    font-weight: bold;
+  }
+}
