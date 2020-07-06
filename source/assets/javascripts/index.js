@@ -1,4 +1,5 @@
 import Glide, { Autoplay, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import { toogleNav } from './components/sidenav';
 import { handleFirstTab } from './components/keyboard_focus';
@@ -10,6 +11,7 @@ import { checkScrollToTop } from './components/back_to_top';
 window.addEventListener('keydown', handleFirstTab);
 
 // back top top btn
+smoothscroll.polyfill();
 window.addEventListener('scroll', () => {
   checkScrollToTop();
 });

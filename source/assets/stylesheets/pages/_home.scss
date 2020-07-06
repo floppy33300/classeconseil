@@ -301,13 +301,13 @@ blockquote p:after {
   blockquote p:before {
     font-size: 6em;
     top: -35%;
-    left: -9%;
+    left: -12%;
   }
 
   blockquote p:after {
     font-size: 6em;
     top: 55%;
-    right: 0;
+    right: 3%;
   }
 
   .introduction {
@@ -385,6 +385,10 @@ blockquote p:after {
     font-size: 18px;
   }
 
+  blockquote p:after {
+    top: 65%;
+  }
+
   .xp p {
     font-size: 15px
   }
@@ -406,6 +410,11 @@ blockquote p:after {
   .btn-flat-outline {
     margin: 40px auto 0;
   }
+
+  blockquote p:after {
+    top: 30%;
+    right: 12%;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -417,10 +426,15 @@ blockquote p:after {
     letter-spacing: 0.5rem;
     margin-left: 0;
   }
+
 }
 
 // ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .banner {
+    text-align: center;
+  }
+
   .page-title {
     display: flex;
     align-items: center;
