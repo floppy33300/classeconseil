@@ -1,7 +1,8 @@
 .footer {
-  background-image: url("https://res.cloudinary.com/dqszntd5j/image/upload/v1593603550/background-1_eoc7zq.png");
-  background-size: cover;
-  background-position: center bottom;
+  // background-image: url("https://res.cloudinary.com/dqszntd5j/image/upload/v1593603550/background-1_eoc7zq.png");
+  // background-size: cover;
+  // background-position: center bottom;
+  background: $dark-red;
   color: $white;
   font-size: 14px;
   padding: 20px 0;
@@ -21,12 +22,12 @@
 }
 
 .btn-contact-footer {
-  background: $dark-red;
-  color: white;
+  // background: $white;
+  color: $white;
   padding: 13px 20px;
   border-radius: 50px;
   text-decoration: none;
-  border: 1px solid $dark-red;
+  border: 1px solid $white;
 }
 
 .btn-contact-footer:hover {
@@ -100,7 +101,7 @@
 
 #colophon {
   color: $white;
-  background-color: #1C2022;
+  background-color: $dark-red;
   padding: 20px 0;
   margin: 0 auto;
 }

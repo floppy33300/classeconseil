@@ -10,6 +10,7 @@
 
 body {
   font-family: $body-font;
+  color: $gray;
 }
 
 
@@ -17,6 +18,7 @@ h1,
 h2,
 h3 {
   font-family: $headers-font;
+  color: $dark-red;
 }
 
 h1 {
