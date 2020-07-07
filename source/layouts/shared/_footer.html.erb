@@ -19,8 +19,13 @@
       <div class="footer-lists">
         <p class="footer-list-title"><%= link_to "Formations", "/formations.html", class:"footer-link" %></p>
         <ul class="footer-list">
-          <li><%= link_to "Catalogue formations", "/formations.html", class:"footer-link" %></li>
-          <li><%= link_to "Bilan de competences", "/formations.html", class:"footer-link" %></li>
+          <li><%= link_to "Catalogue formations", "/formations.html#formations-list", class:"footer-link" %></li>
+        </ul>
+      </div>
+      <div class="footer-lists">
+        <p class="footer-list-title"><%= link_to "Accompagnement", "/accompagnement.html", class:"footer-link" %></p>
+        <ul class="footer-list">
+          <li><%= link_to "Bilan de compétence", "/accompagnement.html", class:"footer-link" %></li>
         </ul>
       </div>
       <div class="footer-lists">
@@ -31,9 +36,9 @@
         </ul>
       </div>
     </div>
-    <div class="footer-btn">
-      <%= link_to "Prendre un Rendez-vous", "contact.html", class:"btn-contact-footer" %>
-    </div>
+    <!-- <div class="footer-btn">
+      <%#= link_to "Prendre un Rendez-vous", "contact.html", class:"btn-contact-footer" %>
+    </div> -->
   </div>
   <div class="separator-gradient-footer"></div>
   <div class="footer-copyright container">
