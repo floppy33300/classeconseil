@@ -8,16 +8,26 @@
     <!-- Navigation -->
     <div class="navbar-middle hidden-sm-down">
       <div class="nav-list">
-        <%= link_to "Qui sommes-nous", "/qui_sommes_nous.html", class:"navbar-link" %>
-        <%= link_to "Pratiques Professionnelles", "/pratiques_professionnelles.html", class:"navbar-link" %>
-        <%= link_to "Formations", "/formations.html", class:"navbar-link" %>
-        <%= link_to "Accompagnement", "/accompagnement.html", class:"navbar-link" %>
-        <%= link_to "Contact", "/contact.html", class:"navbar-link" %>
+        <div class="center">
+          <p><%= link_to "Qui sommes-nous", "/qui_sommes_nous.html", class:"navbar-link" %></p>
+        </div>
+        <div class="center">
+          <p><%= link_to "Pratiques Professionnelles", "/pratiques_professionnelles.html", class:"navbar-link" %></p>
+        </div>
+        <div class="center">
+          <p><%= link_to "Formations", "/formations.html", class:"navbar-link" %></p>
+        </div>
+        <div class="center">
+          <p><%= link_to "Accompagnement", "/accompagnement.html", class:"navbar-link" %></p>
+        </div>
+        <div class="center">
+          <p><%= link_to "Contact", "/contact.html", class:"navbar-link" %></p>
+        </div>
       </div>
     </div>
-    <div class="navbar-right hidden-md-down">
-      <%= link_to "Prendre un Rendez-vous", "contact.html", class:"btn-contact" %>
-    </div>
+    <!-- <div class="navbar-right hidden-md-down">
+      <%#= link_to "Prendre un Rendez-vous", "contact.html", class:"btn-contact" %>
+    </div> -->
     <!-- Burger menu for small screens -->
     <div class="mobile_nav hidden-md-up">
       <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" id="sidenav-trigger">
