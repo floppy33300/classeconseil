@@ -1,7 +1,6 @@
 .banner {
   background-size: cover;
   background-position: center;
-  color: $white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(https://res.cloudinary.com/dqszntd5j/image/upload/v1592929637/4a3c2087-000d-4b80-87f2-5b41da6daba6_twtrm8.jpg);
@@ -17,6 +16,7 @@
     margin: 0 0 20px;
     font-size: 36px;
     font-weight: bold;
+    color: $white;
   }
 
   #conseil {
@@ -28,12 +28,14 @@
     margin: 0 auto;
     font-size: 28px;
     font-weight: 600;
+    color: $white;
   }
 
   h3 {
     margin: 0 auto;
     font-size: 24px;
     font-weight: 400;
+    color: $white;
   }
 }
 
@@ -106,12 +108,12 @@ blockquote p:after {
   margin: 80px auto 0;
 
   a {
-    color: black;
+    color: $gray;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
-      color: black;
+      color: $gray;
     }
   }
 }
@@ -151,7 +153,7 @@ blockquote p:after {
 
 .card-full-link {
   text-decoration: none;
-  color: black;
+  color: $gray;
 }
 
 .services-card {
@@ -203,7 +205,7 @@ blockquote p:after {
 .card-links {
   text-decoration: none;
   font-size: 14px;
-  color: black;
+  color: $gray;
 
   &:hover {
     text-decoration: underline;
@@ -268,7 +270,7 @@ blockquote p:after {
   text-align: center;
 
   a {
-    color: black;
+    color: $gray;
 
     &:hover {
       text-decoration: none;

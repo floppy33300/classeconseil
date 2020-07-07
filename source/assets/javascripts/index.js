@@ -63,3 +63,25 @@ for (i = 0; i < acc.length; i += 1) {
     }
   });
 }
+
+// script to detect if using IE and display an alert
+function getIEVersion() {
+  const sAgent = window.navigator.userAgent;
+  const idx = sAgent.indexOf('MSIE');
+  // If IE, return version number.
+  if (idx > 0) {
+    return parseInt(sAgent.substring(idx + 5, sAgent.indexOf('.', idx)));
+    // If IE 11 then look for Updated user agent string.
+  }
+  if (navigator.userAgent.match(/Trident\/7\./)) {
+    return 11;
+  }
+  // It is not IE
+  return 0;
+}
+
+if (getIEVersion() > 0) {
+  alert(
+    `Vous utilisez ${getIEVersion()}.\nThe site internet ne fonctionne pas sur ce navigateur obsolète.\n Nous supportons les versions récentes des principaux navigateurs comme, Chrome, Firefox, Safari, Edge et Opera.\nPour une meilleure expérience de navigation nous recommandons une mise à jour de votre navigateur.`
+  );
+}
