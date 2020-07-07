@@ -3,7 +3,8 @@ const navs = document.querySelectorAll('.navbar-link');
 
 Array.from(navs).forEach(el => {
   const truncatedHref = el.href.split('/')[3];
+  const navLinkWrapper = el.parentElement;
   if (truncatedHref === current) {
-    el.classList.add('active');
+    navLinkWrapper.classList.add('active');
   }
 });
