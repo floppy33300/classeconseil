@@ -135,6 +135,29 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   }
 }
 
+// parallax
+.parallax {
+  height: 350px;
+  width: 100%;
+  background-color: $gray;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+  box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 1),
+    inset 0 -15px 15px -15px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+
+.banner-title {
+  position: relative;
+  left: 50px;
+  top: 200px;
+  color: $white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
 
 // Utilities classes (take on Bootstrap)
 .container {
