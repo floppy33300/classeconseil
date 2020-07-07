@@ -1,20 +1,36 @@
 .catalogue-wrapper {
+
   ol {
     list-style: none;
     counter-reset: formation-counter;
     margin: 20px auto;
     line-height: 2em;
 
+    li {
+      counter-increment: formation-counter;
+      position: relative;
+    }
+
+    li::before {
+      content: counter(formation-counter) ' - ';
+      // color: $logo-gray;
+      font-weight: bold;
+    }
   }
 
-  li {
-    counter-increment: formation-counter;
-    position: relative;
+  ul {
+    margin: 20px auto;
+    line-height: 2em;
   }
+}
 
-  li::before {
-    content: counter(formation-counter) ' - ';
-    // color: $logo-gray;
-    font-weight: bold;
+.catalogue-link-wrapper {
+  margin: 40px auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+
+  a {
+    color: black;
   }
 }
