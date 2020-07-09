@@ -26,13 +26,14 @@
   padding: 0;
 
   li {
-    line-height: 2.6em;
+    line-height: 2em;
     font-size: 20px;
     letter-spacing: 3px;
   }
 
   li::first-letter {
-    font-size: 200%;
+    font-size: 150%;
+    font-weight: bold;
     color: $dark-red;
   }
 
