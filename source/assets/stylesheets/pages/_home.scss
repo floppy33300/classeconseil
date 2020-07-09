@@ -194,6 +194,11 @@ blockquote p:after {
   }
 }
 
+.card-text {
+  margin: 40px auto;
+  min-height: 50px;
+}
+
 .sep-card {
   width: 90%;
   text-align: center;
