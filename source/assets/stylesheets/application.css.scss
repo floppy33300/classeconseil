@@ -29,9 +29,7 @@ h1 {
 .mini-title {
   font-style: italic;
   font-size: 22px;
-  // color: $dark-red;
   text-align: center;
-  // margin: 20px auto 5px auto;
   margin: 0px auto 5px auto;
 }
 
@@ -44,8 +42,7 @@ h1 {
   font-size: 36px;
   font-weight: 400;
   font-family: $headers-font;
-  // margin-top: 0;
-  margin: 20px auto 5px auto;
+  margin: 10px auto 5px auto;
   letter-spacing: 1px;
 }
 
@@ -100,6 +97,10 @@ h1 {
 
   .banner-title-wrapper {
     padding: 150px 0 0 20px;
+  }
+
+  .section-title {
+    font-size: 30px;
   }
 
 }

@@ -60,7 +60,6 @@
   }
 }
 
-
 // contact form
 .sr-only {
   position: absolute;
@@ -70,7 +69,6 @@
   top: auto;
   overflow: hidden;
 }
-
 
 input {
   outline: none;
@@ -103,13 +101,11 @@ input:focus {
   width: 100%;
 }
 
-
 input.input1 {
   height: 50px;
   border-radius: 25px;
   padding: 0 30px;
 }
-
 
 input.input1+.shadow-input1 {
   border-radius: 25px;
@@ -130,7 +126,6 @@ textarea.input1+.shadow-input1 {
   width: 100%;
   margin: 25px 0px;
 }
-
 
 @media (min-width: 768px) {
   .wrap-input1 {
@@ -211,7 +206,6 @@ textarea.input1+.shadow-input1 {
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
-
 .validate-input {
   position: relative;
 }
@@ -274,7 +268,6 @@ textarea.input1+.shadow-input1 {
   position: absolute;
   right: 15px;
   top: 33%;
-
 }
 
 #error-msg {
@@ -283,7 +276,6 @@ textarea.input1+.shadow-input1 {
   right: 15px;
   top: 33%;
 }
-
 
 @media only screen and (max-width: 1200px) {
   .contact-details-wrapper {

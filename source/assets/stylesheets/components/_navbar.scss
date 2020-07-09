@@ -74,23 +74,6 @@
   }
 }
 
-// .btn-contact {
-//   background: $dark-red;
-//   color: white;
-//   padding: 10px 20px;
-//   border-radius: 5px;
-//   font-size: 14px;
-//   text-decoration: none;
-//   border: 1px solid $dark-red;
-// }
-
-// .btn-contact:hover {
-//   color: $dark-red;
-//   background: white;
-//   border: 1px solid $dark-red;
-//   box-shadow: 1px 1px 0px 0px rgba(107, 0, 30, 0.5);
-// }
-
 .sidenav {
   height: 0;
   width: 100%;
@@ -256,7 +239,6 @@
 
 // END mobile nav
 
-// media queries
 // tel
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .sidenav ul {
@@ -287,10 +269,6 @@
   .navbar-item {
     padding: 27px 20px;
   }
-
-  // .btn-contact {
-  //   padding: 10px 5px;
-  // }
 }
 
 @media only screen and (max-width: 920px) {

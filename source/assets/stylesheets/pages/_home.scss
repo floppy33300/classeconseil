@@ -343,7 +343,6 @@ blockquote p:after {
   }
 }
 
-
 @media only screen and (min-width: 320px) and (max-width: 812px) {
   .banner {
     text-align: center;
@@ -401,7 +400,6 @@ blockquote p:after {
   }
 }
 
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .page-title {
     display: flex;
@@ -418,9 +416,14 @@ blockquote p:after {
     margin: 40px auto 0;
   }
 
+  blockquote p:before {
+    top: -35%;
+    left: -8%;
+  }
+
   blockquote p:after {
-    top: 30%;
-    right: 12%;
+    top: 55%;
+    right: 0%;
   }
 }
 
@@ -433,7 +436,6 @@ blockquote p:after {
     letter-spacing: 0.5rem;
     margin-left: 0;
   }
-
 }
 
 // ipad
@@ -448,8 +450,6 @@ blockquote p:after {
     justify-content: center;
   }
 }
-
-
 
 @media (max-height: 420px) {
   .icon-scroll {
