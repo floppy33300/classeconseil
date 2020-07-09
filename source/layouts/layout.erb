@@ -4,8 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1", shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
+    <meta name="description" content="<%= data.meta.meta_description %>">
+    <meta name="theme-color" content="#6B001E" />
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= data.meta.meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.classeconseil.fr" />
+    <meta property="og:image" content="<%= data.meta.meta_image %>" />
+    <meta property="og:description" content="<%= data.meta.meta_description %>" />
+    <meta property="og:site_name" content="<%= data.meta.meta_product_name %>" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= data.meta.meta_title %>">
+    <meta name="twitter:description" content="<%= data.meta.meta_description %>">
+    <meta name="twitter:image:src" content="<%= data.meta.meta_image %>">
     <%= stylesheet_link_tag "application" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   </head>
