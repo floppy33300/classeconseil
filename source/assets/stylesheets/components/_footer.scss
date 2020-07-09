@@ -176,3 +176,13 @@
     justify-content: space-around;
   }
 }
+
+// query to give in size of 48*48 (google reco) on footer links
+@media only screen and (min-device-width: 320px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .footer-link {
+    display: block;
+    padding: 14px 0;
+  }
+
+}

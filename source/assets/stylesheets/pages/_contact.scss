@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 80px auto 100px auto;
+  margin: 80px auto 40px auto;
   max-width: 800px;
 }
 
@@ -103,15 +103,6 @@ input:focus {
   width: 100%;
 }
 
-.contact1-form-title {
-  display: block;
-  font-family: $body-font;
-  font-size: 24px;
-  color: black;
-  line-height: 1.2;
-  text-align: center;
-  padding-bottom: 44px;
-}
 
 input.input1 {
   height: 50px;
@@ -156,7 +147,7 @@ textarea.input1+.shadow-input1 {
   font-family: $body-font;
   font-size: 14px;
   line-height: 1.5;
-  color: $logo-gray;
+  color: $dark-gray;
   border-radius: 25px;
   border: 1px solid rgba(128, 128, 128, 0.1);
   transition: all 0.4s ease;
@@ -165,7 +156,8 @@ textarea.input1+.shadow-input1 {
 
 .input1::placeholder {
   font-weight: lighter;
-  color: rgba(128, 128, 128, 0.8);
+  color: rgba(128, 128, 128, 1);
+  opacity: 1;
 }
 
 .input1:focus,
