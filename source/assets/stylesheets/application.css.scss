@@ -49,7 +49,7 @@ h1 {
 
 // parallax
 .parallax {
-  height: 350px;
+  height: 400px;
   width: 100%;
   background-color: $gray;
   background-attachment: fixed;
@@ -150,7 +150,6 @@ h1 {
   }
 
   .banner-text {
-    margin-top: 250px;
+    margin-top: 200px !important;
   }
-
 }
