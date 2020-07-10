@@ -82,6 +82,6 @@ function getIEVersion() {
 
 if (getIEVersion() > 0) {
   alert(
-    `Vous utilisez ${getIEVersion()}.\nThe site internet ne fonctionne pas sur ce navigateur obsolète.\n Nous supportons les versions récentes des principaux navigateurs comme, Chrome, Firefox, Safari, Edge et Opera.\nPour une meilleure expérience de navigation nous recommandons une mise à jour de votre navigateur.`
+    `Vous utilisez Internet Explorer ${getIEVersion()}.\nThe site internet ne fonctionne pas sur ce navigateur obsolète.\n Nous supportons les versions récentes des principaux navigateurs comme, Chrome, Firefox, Safari, Edge et Opera.\nPour une meilleure expérience de navigation nous recommandons une mise à jour de votre navigateur.`
   );
 }
