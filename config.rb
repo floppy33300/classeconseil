@@ -8,8 +8,8 @@ set :fonts_dir,  'assets/fonts'
 set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = 'last 2 versions'
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 11']
 end
 
 activate :external_pipeline,
