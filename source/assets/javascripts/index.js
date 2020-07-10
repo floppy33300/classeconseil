@@ -64,7 +64,6 @@ for (i = 0; i < acc.length; i += 1) {
   });
 }
 
-// script to detect if using IE and display an alert
 function getIEVersion() {
   const sAgent = window.navigator.userAgent;
   const idx = sAgent.indexOf('MSIE');
@@ -79,9 +78,15 @@ function getIEVersion() {
   // It is not IE
   return 0;
 }
-
-if (getIEVersion() > 0) {
-  alert(
-    `Vous utilisez Internet Explorer ${getIEVersion()}.\nThe site internet ne fonctionne pas sur ce navigateur obsolète.\n Nous supportons les versions récentes des principaux navigateurs comme, Chrome, Firefox, Safari, Edge et Opera.\nPour une meilleure expérience de navigation nous recommandons une mise à jour de votre navigateur.`
-  );
-}
+window.addEventListener('load', function() {
+  const page = document.location.pathname;
+  if (page === '/') {
+    setTimeout(() => {
+      if (getIEVersion() > 0) {
+        alert(
+          `Vous utilisez Internet Explorer ${getIEVersion()}.\nCe site internet ne fonctionne pas correctement sur ce navigateur obsolète.\nPour une meilleure expérience de navigation nous recommandons une mise à jour de votre navigateur.`
+        );
+      }
+    }, 1000);
+  }
+});
