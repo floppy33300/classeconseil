@@ -129,3 +129,28 @@ h1 {
     background-position: top;
   }
 }
+
+//  IE 11 hack to fix flex issue
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+  .introduction,
+  .footer-info,
+  .nav-list {
+    justify-content: space-around;
+  }
+
+  .reinsurance-wrapper {
+    justify-content: center;
+  }
+
+  #acronym {
+    width: 500px;
+    margin: auto;
+  }
+
+  .banner-text {
+    margin-top: 250px;
+  }
+
+}
