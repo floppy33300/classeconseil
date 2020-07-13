@@ -1,4 +1,3 @@
-import '@babel/polyfill';
 import Glide, { Autoplay, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm';
 import smoothscroll from 'smoothscroll-polyfill';
 import { toogleNav } from './components/sidenav';
