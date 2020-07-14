@@ -7,9 +7,8 @@
 
 .footer-logo-container {
   text-align: center;
-  margin: 20px auto;
+  margin: 0 auto 20px;
 }
-
 
 .footer-info {
   display: flex;
@@ -146,12 +145,6 @@
       margin: 0 auto;
       padding-bottom: 20px;
     }
-  }
-}
-
-@media screen and (max-width: 1099px) {
-  .footer-logo-container {
-    margin: 10px auto 0;
   }
 }
 

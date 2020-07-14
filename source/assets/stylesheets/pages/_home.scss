@@ -323,7 +323,11 @@ blockquote p:after {
 
   .wrapper-left {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px auto 40px;
+  }
+
+  #intro-logo {
+    width: 140px;
   }
 }
 
