@@ -78,20 +78,24 @@ blockquote {
 
 blockquote p:before {
   content: "\201C";
+  font-family: Helvetica;
+  font-weight: 400;
   color: $dark-red;
-  font-size: 8em;
+  font-size: 7em;
   position: absolute;
-  top: -70%;
+  top: -55%;
   left: -3%;
 }
 
 blockquote p:after {
   content: "\201D";
+  font-family: Helvetica;
+  font-weight: 400;
   color: $dark-red;
-  font-size: 8em;
+  font-size: 7em;
   position: absolute;
-  top: 24%;
-  right: 5%;
+  top: 35%;
+  right: 2%;
 }
 
 .quote-text p {
@@ -306,15 +310,15 @@ blockquote p:after {
   }
 
   blockquote p:before {
-    font-size: 6em;
-    top: -35%;
-    left: -12%;
+    font-size: 7em;
+    top: -34%;
+    left: -13%;
   }
 
   blockquote p:after {
-    font-size: 6em;
-    top: 55%;
-    right: 3%;
+    font-size: 7em;
+    top: 70%;
+    right: 0%;
   }
 
   .introduction {
