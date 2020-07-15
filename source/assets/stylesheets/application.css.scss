@@ -46,7 +46,6 @@ h1 {
   letter-spacing: 1px;
 }
 
-
 // parallax
 .parallax {
   height: 400px;
@@ -93,6 +92,7 @@ h1 {
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
   .parallax {
     height: 250px;
+    background-attachment: inherit;
   }
 
   .banner-title-wrapper {
