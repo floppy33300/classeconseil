@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://www.classeconseil.fr/</loc>
+	<lastmod>2020-07-16T18:04:22+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/presentation</loc>
+	<lastmod>2020-07-16T18:04:23+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/pratiques_professionnelles</loc>
+	<lastmod>2020-07-16T18:04:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/formations</loc>
+	<lastmod>2020-07-16T18:04:26+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/accompagnement</loc>
+	<lastmod>2020-07-16T18:04:27+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/contact</loc>
+	<lastmod>2020-07-16T18:04:29+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/mentions_legales</loc>
+	<lastmod>2020-07-16T18:04:27+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/cgv</loc>
+	<lastmod>2020-07-16T18:04:28+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/assets/images/catalogue_formations_management.pdf</loc>
+	<lastmod>2020-07-16T18:04:28+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/assets/images/catalogue_formations_sante_mentale_au_travail.pdf</loc>
+	<lastmod>2020-07-16T18:04:31+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/assets/images/catalogue_formations_efficience_perso.pdf</loc>
+	<lastmod>2020-07-16T18:04:30+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://www.classeconseil.fr/assets/images/programme_bilan_de_competences.pdf</loc>
+	<lastmod>2020-07-16T18:04:32+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+</urlset>

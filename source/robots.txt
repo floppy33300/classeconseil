@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow:
-Sitemap:
+Sitemap: https://www.classeconseil.fr/sitemap.xml
