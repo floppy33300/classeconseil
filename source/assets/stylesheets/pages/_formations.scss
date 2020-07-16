@@ -2,7 +2,6 @@
   background-position: bottom;
 }
 
-
 .catalogue-wrapper {
   ol {
     list-style: none;
@@ -35,11 +34,5 @@
 
   a {
     color: $gray;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 812px) and (min-device-width: 320px) and (orientation: landscape) {
-  #formations-banner {
-    background-position: center;
   }
 }

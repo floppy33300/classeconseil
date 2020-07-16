@@ -5,7 +5,6 @@
   ;
 }
 
-
 .pratique_pro-page {
   counter-reset: title;
 
@@ -146,11 +145,4 @@
       font-size: 15px;
     }
   }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 812px) and (min-device-width: 320px) and (orientation: landscape) {
-  #pratique_pro-banner {
-    background-size: contain;
-  }
-
 }

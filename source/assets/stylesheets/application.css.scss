@@ -71,12 +71,6 @@ h1 {
   margin: 0 0 10px 40px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-  .banner {
-    background-attachment: scroll;
-  }
-}
-
 @media (max-width: 991px) {
   .banner-title {
     font-size: 32px;
@@ -89,10 +83,21 @@ h1 {
   }
 }
 
+// All mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .parallax {
+    background-attachment: scroll;
+  }
+
+  #presentation-banner {
+    background-position: center;
+  }
+}
+
+// phones
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
   .parallax {
     height: 250px;
-    background-attachment: inherit;
   }
 
   .banner-title-wrapper {
@@ -102,17 +107,25 @@ h1 {
   .section-title {
     font-size: 30px;
   }
-
 }
 
+// phone landscape
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .parallax {
     height: 200px;
   }
 
-
   .banner-title-wrapper {
     padding: 120px 0 0 15px;
+  }
+
+  #pratique_pro-banner {
+    background-size: contain;
+  }
+
+  #formations-banner,
+  #accompagnement-banner {
+    background-position: center;
   }
 }
 
@@ -120,13 +133,19 @@ h1 {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .parallax {
     height: 300px;
+  }
+
+  #presentation-banner,
+  #formations-banner,
+  #accompagnement-banner {
     background-position: center;
   }
 }
 
+// ipad landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .parallax {
-    background-position: top;
+  #pratique_pro-banner {
+    background-size: cover;
   }
 }
 

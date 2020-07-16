@@ -408,7 +408,7 @@ blockquote p:after {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .page-title {
     display: flex;
     align-items: center;
@@ -456,6 +456,12 @@ blockquote p:after {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .page-title {
+    justify-content: flex-start;
   }
 }
 
