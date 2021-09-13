@@ -16,7 +16,7 @@
  - Webpack (module bundler)
 
 ## Author
-👤 ** FlorianDev / AlexGWebDev**
+👤 **FlorianDev / AlexGWebDev**
 
 * AlexGWebDev Website: https://www.alexgwebdev.com/
 
