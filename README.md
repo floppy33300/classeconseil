@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to C.L.A.S.S.E. Conseil 👋</h1>
+<h1 align="center">C.L.A.S.S.E. Conseil</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -6,31 +6,19 @@
   </a>
 </p>
 
-> Website for C.L.A.S.S.E.
+> Website for C.L.A.S.S.E. Conseil a psychologist,Consultant independant human resources trainer.
 
-### 🏠 [Homepage](https://www.classeconseil.fr/)
+### 🏠 [C.L.A.S.S.E. Conseil](https://www.classeconseil.fr/)
 
-## Install
-
-```sh
-yarn install
-```
-
-## Usage
-
-```sh
-yarn run start
-```
+## Stack
+ - Middleman (Ruby static site generator)
+ - Ruby
+ - Cloudinary (Assets hosting)
+ - Netlify (deploy & hosting)
+ - Webpack (module bundler)
 
 ## Author
+👤 ** FlorianDev / AlexGWebDev**
 
-👤 **Florian Dublanc / AlexGWebDev**
+* AlexGWebDev Website: https://www.alexgwebdev.com/
 
-* Website: https://www.alexgwebdev.com/
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
