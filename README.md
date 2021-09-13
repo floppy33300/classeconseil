@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Website for C.L.A.S.S.E. Conseil a psychologist,Consultant independant human resources trainer.
+> Website for C.L.A.S.S.E. Conseil a psychologist, consultant and independant human resources trainer.
 
 ### 🏠 [C.L.A.S.S.E. Conseil](https://www.classeconseil.fr/)
 
