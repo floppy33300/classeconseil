@@ -1,8 +1,4 @@
 <h1 align="center">C.L.A.S.S.E. Conseil</h1>
-<p>
-    <img alt="License: UNLICENSED" src="https://img.shields.io/badge/License-UNLICENSED-yellow.svg" />
-  </a>
-</p>
 
 > Website for C.L.A.S.S.E. Conseil a psychologist, consultant and independant human resources trainer.
 
