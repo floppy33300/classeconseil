@@ -8,7 +8,7 @@
 }
 
 .contact-items {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 3px;
   height: 120px;
   padding: 0 10px;
@@ -107,7 +107,7 @@ input.input1 {
   padding: 0 30px;
 }
 
-input.input1+.shadow-input1 {
+input.input1 + .shadow-input1 {
   border-radius: 25px;
 }
 
@@ -117,7 +117,7 @@ textarea.input1 {
   padding: 12px 30px;
 }
 
-textarea.input1+.shadow-input1 {
+textarea.input1 + .shadow-input1 {
   border-radius: 25px;
 }
 
@@ -146,7 +146,8 @@ textarea.input1+.shadow-input1 {
   border-radius: 25px;
   border: 1px solid rgba(128, 128, 128, 0.1);
   transition: all 0.4s ease;
-  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
 }
 
 .input1::placeholder {
@@ -204,6 +205,24 @@ textarea.input1+.shadow-input1 {
   margin: 10px 0px;
 }
 
+.checkbox-input {
+  width: 18px;
+  height: 18px;
+  accent-color: $dark-red;
+  border: 1px solid $dark-red;
+  border-radius: 3px;
+}
+
+.checkbox-label {
+  line-height: 1.4px;
+  padding: 10px;
+}
+
+#checkbox-rgpd {
+  margin-top: 20px;
+  padding: 10px;
+}
+
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 .validate-input {
@@ -234,9 +253,9 @@ textarea.input1+.shadow-input1 {
 }
 
 .alert-validate::after {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f06a";
+  content: '\f06a';
   display: block;
   position: absolute;
   color: $dark-red;

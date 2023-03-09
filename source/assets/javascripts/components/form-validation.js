@@ -4,6 +4,7 @@ const phone = document.querySelector('input[name="telephone"]');
 const email = document.querySelector('input[name="email"]');
 const subject = document.querySelector('input[name="sujet"]');
 const message = document.querySelector('textarea[name="message"]');
+const checkbox = document.querySelector('input[name="rgpd"]');
 
 function showValidate(input) {
   const thisAlert = input.parentElement;
@@ -40,6 +41,11 @@ function validateForm() {
     check = false;
   }
 
+  if (checkbox.checked === false) {
+    showValidate(checkbox);
+    check = false;
+  }
+
   return check;
 }
 
@@ -49,6 +55,12 @@ if (form) {
     input.addEventListener('blur', () => {
       hideValidate(input);
     });
+  });
+  const checkbox = document.querySelector('input[name="rgpd"]');
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      hideValidate(checkbox);
+    }
   });
 
   form.addEventListener('submit', function(event) {
