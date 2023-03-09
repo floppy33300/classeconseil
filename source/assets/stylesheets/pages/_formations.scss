@@ -36,3 +36,46 @@
     color: $gray;
   }
 }
+
+.red_bg_container {
+  // border: 1px solid red;
+  background: $dark-red;
+  color: $white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+.section_wrapper {
+  margin-top: 20px;
+}
+
+.middle_wrapper {
+  display: flex;
+  align-items: flex-start;
+  p {
+    margin: 0;
+
+    line-height: 1.4;
+  }
+}
+
+.left_first {
+  width: 180px;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.left {
+  padding: 1rem;
+  margin-right: 1rem;
+  background: #e7e6e6;
+  color: $dark-red;
+  border: 1px solid black;
+  width: 180px;
+}
+
+.right {
+  flex: 1;
+}
+
+.link {
+  color: #fff;
+}

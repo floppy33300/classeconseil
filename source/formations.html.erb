@@ -2,9 +2,15 @@
 title: Formations - C.L.A.S.S.E. Conseil
 description: Corine Pesier - CLASSE CONSEIL - Offres de prestations de formations en Management, Santé mentale au travail, Efficience au poste de travail et analyse des pratiques professionnelles
 ---
-<div class="parallax"
-  style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dqszntd5j/image/upload/v1594825524/formation.jpg);"
-  id="formations-banner">
+
+<div
+  class="parallax"
+  style="
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+      url(https://res.cloudinary.com/dqszntd5j/image/upload/v1594825524/formation.jpg);
+  "
+  id="formations-banner"
+>
   <div class="banner-title-wrapper">
     <h1 class="banner-title">Formations</h1>
   </div>
@@ -17,6 +23,50 @@ description: Corine Pesier - CLASSE CONSEIL - Offres de prestations de formation
     <div class="accordion-wrapper" id="formations-list">
       <div class="accordion-item">
         <button class="accordion first-child">
+          Modalités d'accès
+        </button>
+        <div class="accordion-panel">
+          <div class="section_wrapper">
+            <div class="middle_wrapper">
+              <div class="left_first"></div>
+              <div class="red_bg_container right">
+                <p>Formation intra établissement</p>
+                <p>Format : présentiel</p>
+                <p>Rythme : temps plein</p>
+              </div>
+            </div>
+            <div class="middle_wrapper">
+              <div class="left">
+                <p>Délais d’accès : 3 mois</p>
+              </div>
+              <div class="red_bg_container right">
+                <p>
+                  Je me renseigne : allez à l’onglet <%= link_to "prendre
+                  contact", "/contact.html", class:"link" %>
+                </p>
+              </div>
+            </div>
+            <div class="middle_wrapper">
+              <div class="left">
+                <p>Accessibilité handicap :</p>
+              </div>
+              <div class="red_bg_container right">
+                <p>
+                  Les formations sont accessibles aux personnes en situation de
+                  handicap visible ou non-visible. <br /><br />
+                  La personne en situation de handicap ou la personne chargée de
+                  la formation pourra entrer en contact avec le formateur(trice)
+                  10 à 15 jours avant la formation afin d’envisager les
+                  modalités d’adaptation nécessaires au bon déroulement de la
+                  formation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion">
           Management (19 formations)
         </button>
         <div class="accordion-panel">
@@ -136,7 +186,7 @@ description: Corine Pesier - CLASSE CONSEIL - Offres de prestations de formation
           </div>
         </div>
       </div>
-      <div class="accordion-item last-child">
+      <div class="accordion-item">
         <button class="accordion">
           Analyse des pratiques professionnelles
         </button>
@@ -159,6 +209,18 @@ description: Corine Pesier - CLASSE CONSEIL - Offres de prestations de formation
               Le développement de la compréhension et de l’adaptation à autrui
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="accordion-item last-child">
+        <button class="accordion">
+          Documents
+        </button>
+        <div class="accordion-panel">
+          <div class="catalogue-link-wrapper">
+            <%= link_to 'Voir le Règlement intérieur',
+            '../assets/images/reglement_interieur.pdf', target: '_blank', rel:
+            "noopener noreferrer", class: "catalogue-link" %>
+          </div>
         </div>
       </div>
     </div>
