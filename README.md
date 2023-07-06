@@ -2,17 +2,18 @@
 
 > Website for C.L.A.S.S.E. Conseil a psychologist, consultant and independant human resources trainer.
 
-### 🏠 [C.L.A.S.S.E. Conseil](https://www.classeconseil.fr/)
+### 🏠 [C.L.A.S.S.E. Conseil](https://www.classe-conseil.fr/)
 
 ## Stack
- - Middleman (Ruby static site generator)
- - Ruby
- - Cloudinary (Assets hosting)
- - Netlify (deploy & hosting)
- - Webpack (module bundler)
+
+- Middleman (Ruby static site generator)
+- Ruby
+- Cloudinary (Assets hosting)
+- Netlify (deploy & hosting)
+- Webpack (module bundler)
 
 ## Author
+
 👤 **FlorianDev / AlexGWebDev**
 
-* AlexGWebDev Website: https://www.alexgwebdev.com/
-
+- AlexGWebDev Website: https://www.alexgwebdev.com/
