@@ -105,10 +105,13 @@ description: Corine Pesier - CLASSE CONSEIL - Présentation de l'entreprise et d
           <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1594648971/datadock-logo.png', alt: "Datadock - certification logo", id: "datadock-logo", class:"certif-logos" %>
           <p>DATADOCK</p>
         </div>
-        <!-- <div class="qualiopi">
+        <div class="qualiopi">
           <%= image_tag 'https://res.cloudinary.com/dqszntd5j/image/upload/v1594648971/qualiopi-logo.png', alt: "Qualiopi - certification logo", id: "qualiopi-logo", class:"certif-logos" %>
-          <p>QUALIOPI (en cours de procédure)</p>
-        </div> -->
+          <p><%= link_to 'QUALIOPI (voir certificat)',
+            '../assets/images/certificat_qualiopi.pdf', target: '_blank', rel:
+            "noopener noreferrer", class: "certif-link" %></p>
+
+        </div>
       </div>
     </div>
   </div>

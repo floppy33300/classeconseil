@@ -112,10 +112,13 @@
   margin-bottom: 50px;
   margin-top: -15px;
 
-  p {
+  p, .certif-link {
     letter-spacing: 1px;
     text-align: center;
     margin: 0 auto;
+    text-decoration: none;
+    color: inherit;
+
   }
 }
 
